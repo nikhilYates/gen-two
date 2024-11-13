@@ -18,12 +18,13 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart"
 const chartData = [
-    { label: "software design", desktop: 185},
-    { label: "SaaS", desktop: 186},
-    { label: "product", desktop: 207},
-    { label: "finance", desktop: 173},
+    { label: "Project Management", desktop: 100},
+    { label: "SaaS", desktop: 175},
+    { label: "Product", desktop: 100},
+    { label: "Software Design", desktop: 185},
+    { label: "Finance", desktop: 60},
     { label: "AI/ML", desktop: 160},
-    { label: "data", desktop: 174},
+    { label: "Data", desktop: 174},
 ]
 
 const chartConfig = {
@@ -49,13 +50,6 @@ export function ExperienceGraph() {
               fill="var(--color-desktop)"
               fillOpacity={0}
               stroke="var(--color-desktop)"
-              strokeWidth={2}
-            />
-            <Radar
-              dataKey="mobile"
-              fill="var(--color-mobile)"
-              fillOpacity={0}
-              stroke="var(--color-mobile)"
               strokeWidth={2}
             />
           </RadarChart>

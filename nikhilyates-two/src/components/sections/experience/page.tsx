@@ -8,8 +8,8 @@ import { ExperienceType } from '@/lib/definitions'
 // sort experiences by key skills developed, tools used, volunteer work, etc
 
 const dummyExperience: ExperienceType = {
-  title: "Software Engineer",
-  company: "Tech Solutions Inc.",
+  title: "Full-Stack Engineer",
+  company: "Conduit Venture Labs",
   category: "Software Development", 
   skills: [
     "JavaScript",
@@ -35,7 +35,9 @@ const dummyExperience: ExperienceType = {
   ],
   durationMonths: 18,
   startDate: new Date("2022-01-01"),
-  endDate: new Date("2023-06-30")
+  endDate: new Date("2023-06-30"),
+  location: 'remote',
+  frequency: 'fulltime'
 }
 
 
@@ -47,7 +49,7 @@ const Experience = () => {
         <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight text-white'>little bit of this, little bit of that... whole lot of  </h3>
       </div>
       <div className='w-full h-full flex flex-row'>
-        <div className='w-[750px]'>
+        <div className='w-[1100px]'>
           <ExperienceCard experience={dummyExperience}/>
         </div>
       </div>

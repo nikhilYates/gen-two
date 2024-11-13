@@ -8,5 +8,7 @@ export type ExperienceType = {
     achievements: string[] 
     durationMonths: number,
     startDate: Date,
-    endDate: Date
+    endDate: Date,
+    location: string,
+    frequency: string
 }
