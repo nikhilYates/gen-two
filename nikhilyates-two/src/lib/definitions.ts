@@ -1,9 +1,12 @@
 export type ExperienceType = {
     title: string,
     company: string,
-    durationMonths: number,
     category: string,
     skills: string[],
     tools: string[],
+    description: string,
     achievements: string[] 
+    durationMonths: number,
+    startDate: Date,
+    endDate: Date
 }
