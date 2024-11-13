@@ -8,9 +8,9 @@ interface ExperienceCardProps {
     experience: ExperienceType
 }
 
-const ExperienceCard = ({ experience }: ExperienceCardProps ) => {
+const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
   return (
-    <Card className='bg-inherit text-white border-zinc-600 rounded-2xl hover:border-zinc-500 transition-colors ease-in-out duration-300'>
+    <Card className='bg-inherit text-white border-zinc-600 rounded-2xl hover:border-zinc-300 transition-colors ease-in-out duration-500'>
         <CardHeader className='flex flex-row justify-between'>
             <div>
                 <CardTitle className='font-bold text-4xl'>
@@ -39,12 +39,10 @@ const ExperienceCard = ({ experience }: ExperienceCardProps ) => {
                     </ul>
                     <h3 className='mt-8 mb-2 scroll-m-20 text-2xl font-medium tracking-tight'>tech</h3>
                     <div>
-                        <Badge className='mr-1 mb-1' variant={'destructive'}>RAG</Badge>
-                        <Badge className='mr-1 mb-1' variant={'destructive'}>TypeScript</Badge>
-                        <Badge className='mr-1 mb-1' variant={'destructive'}>React Native</Badge>
-                        <Badge className='mr-1 mb-1' variant={'destructive'}>PostgreSQL</Badge>
-                        <Badge className='mr-1 mb-1' variant={'destructive'}>PostgreSQL</Badge>
-                        <Badge className='mr-1 mb-1' variant={'destructive'}>PostgreSQL</Badge>
+                    {experience.skills.map((skill, index) => (
+                        <Badge key={index} className='mr-1 mb-1' variant={'destructive'}>{skill}</Badge>
+                    ))}
+                        
                     </div>
                 </div>
                 <div className='w-1/2'>
@@ -60,4 +58,4 @@ const ExperienceCard = ({ experience }: ExperienceCardProps ) => {
   )
 }
 
-export default ExperienceCard
+export default ExperienceCardLarge

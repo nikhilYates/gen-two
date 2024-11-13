@@ -1,6 +1,6 @@
 import React from 'react'
-import ExperienceCard from './utilities/ExperienceCard'
 import { ExperienceType } from '@/lib/definitions'
+import ExperienceCardLarge from './utilities/ExperienceCard'
 
 
 // RAG-interactable content here. want to be able to select an experience, 
@@ -46,11 +46,15 @@ const Experience = () => {
     <div className='bg-zinc-950 h-screen w-screen p-16 flex flex-col gap-8'>
       <div className='w-full flex flex-col gap-3'>
         <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-white'>experience</h1>
-        <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight text-white'>little bit of this, little bit of that... whole lot of  </h3>
+        <h3 className='scroll-m-20 text-2xl font-medium tracking-tight text-white'>little bit of this, little bit of that... whole lot of  </h3>
       </div>
       <div className='w-full h-full flex flex-row'>
-        <div className='w-[1100px]'>
-          <ExperienceCard experience={dummyExperience}/>
+        <div className='w-full'>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {[dummyExperience, dummyExperience].map((experience, index) => (
+              <ExperienceCardLarge key={index} experience={experience} />
+            ))}
+          </div>
         </div>
       </div>
         
