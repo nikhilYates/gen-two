@@ -10,7 +10,7 @@ interface ExperienceCardProps {
 
 const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
   return (
-    <Card className='bg-inherit text-white border-zinc-600 rounded-2xl hover:border-zinc-300 transition-colors ease-in-out duration-500'>
+    <Card className='bg-inherit text-white border-2 border-zinc-600 rounded-2xl hover:border-zinc-300 transition-colors ease-in-out duration-500'>
         <CardHeader className='flex flex-row justify-between'>
             <div>
                 <CardTitle className='font-bold text-4xl'>
