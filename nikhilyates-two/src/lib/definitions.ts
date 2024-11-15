@@ -12,3 +12,10 @@ export type ExperienceType = {
     location: string,
     frequency: string
 }
+
+export type NavigationContentType = {
+    id: number,
+    title: string,
+    description: string,
+    photoUrl: string
+}
