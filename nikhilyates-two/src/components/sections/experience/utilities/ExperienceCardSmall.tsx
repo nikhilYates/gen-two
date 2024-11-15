@@ -31,8 +31,10 @@ const ExperienceCardSmall = ({ experience }: ExperienceCardProps ) => {
                     <p className='leading-7 [&:not(:first-child)] text-white'>
                         {experience.description}
                     </p>
-                    <div className='h-[10rem]'>
-                        <ExperienceGraph />
+                    <div className='flex flex-row justify-center mt-8'>
+                        <div className='w-1/2'>
+                            <ExperienceGraph />
+                        </div>
                     </div>
                     <h3 className='mt-8 mb-2 scroll-m-20 text-2xl font-medium tracking-tight'>tech</h3>
                     <div>
