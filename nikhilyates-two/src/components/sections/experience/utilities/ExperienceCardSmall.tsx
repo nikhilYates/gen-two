@@ -8,9 +8,9 @@ interface ExperienceCardProps {
     experience: ExperienceType
 }
 
-const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
+const ExperienceCardSmall = ({ experience }: ExperienceCardProps ) => {
   return (
-    <Card className='bg-inherit text-white border-zinc-600 rounded-2xl max-h-[50rem] hover:border-zinc-300 transition-colors ease-in-out duration-500'>
+    <Card className='w-1/2 bg-inherit max-h-[50rem] text-white border-zinc-600 rounded-2xl hover:border-zinc-300 transition-colors ease-in-out duration-500'>
         <CardHeader className='flex flex-row justify-between'>
             <div>
                 <CardTitle className='font-bold text-4xl'>
@@ -25,18 +25,15 @@ const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
             </div>
         </CardHeader>
         <CardContent>
-            <div className='flex flex-row justify-between gap-4'>
-                <div className='w-1/2 flex flex-col justify-start'>
+            <div className='flex flex-col justify-between gap-4'>
+                <div className='w-full flex flex-col justify-start'>
                     <h3 className='mb-2 scroll-m-20 text-2xl font-medium tracking-tight'>overview</h3>
                     <p className='leading-7 [&:not(:first-child)] text-white'>
                         {experience.description}
                     </p>
-                    <h3 className='mt-8 mb-2 scroll-m-20 text-2xl font-medium tracking-tight'>notables</h3>
-                    <ul className=" ml-10 list-disc [&>li]:mt-2">
-                        {experience.achievements.map((achievement, index) => (
-                            <li key={index}><b>{achievement}</b></li>
-                        ))}
-                    </ul>
+                    <div className='h-[10rem]'>
+                        <ExperienceGraph />
+                    </div>
                     <h3 className='mt-8 mb-2 scroll-m-20 text-2xl font-medium tracking-tight'>tech</h3>
                     <div>
                     {experience.skills.map((skill, index) => (
@@ -45,9 +42,7 @@ const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
                         
                     </div>
                 </div>
-                <div className='w-1/2'>
-                    <ExperienceGraph />
-                </div>
+                
             </div>
         </CardContent>
         <CardFooter className='flex flex-row justify-end gap-1'>
@@ -58,4 +53,4 @@ const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
   )
 }
 
-export default ExperienceCardLarge
+export default ExperienceCardSmall
