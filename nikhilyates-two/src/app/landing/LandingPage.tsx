@@ -1,33 +1,48 @@
 import React from 'react'
 import contents from '../../../data/contents.json';
 import NavCard from './components/NavCard';
-import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
-import { Separator } from '@/components/ui/separator';
-
-
-
-
+import Image from 'next/image';
+import linkedinWhite from '../../../public/assets/svgs/linkedinWhite.svg';
+import instagramWhite from '../../../public/assets/svgs/instagramWhite.svg';
+import githubWhite from '../../../public/assets/svgs/githubWhite.svg';
+import nyWhite from '../../../public/assets/svgs/nyWhite.svg';
 
 
 const LandingPage = () => {
   return (
     <div className='bg-zinc-950 h-screen p-16'>
-      <div className='w-full h-full flex flex-row justify-between'>
-        <div className='h-full w-full flex flex-col justify-top pt-20'>
-          <h1 className="text-[35rem] font-black tracking-tighter text-zinc-900 leading-[10rem]">nikhil<br /><span className='text-zinc-800'>yates</span></h1>
-          <h1 className="mt-[20rem] scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-white">entrepreneur, software engineer, designer</h1>
-          <p className="text-2xl leading-7 [&:not(:first-child)]:mt-6 text-gray-100">working at the intersection of tech business and design. yes that ven diagram exists and i'm in the center of it</p>
+      <div className='w-full h-full flex flex-col'>
+        <div className='h-full w-full flex flex-col justify-top'>
+          <div className='flex flex-row justify-between'>
+            <Image priority src={nyWhite} alt='linkedin logo' className='h-16 w-16'/>
+            <div className="w-1/3">
+              {/* <p className="leading-7 [&:not(:first-child)]:mt-6 text-gray-400">
+                working at the intersection of tech, business, and design. yes that ven diagram exists and i'm in the center of it.
+                currently at <span className='text-blue-500'>Conduit Venture Labs</span> as a full stack engineer working in the heart of product.
+                love fast-paced work, getting on to the next project.
+              </p>
+              <p className="leading-7 [&:not(:first-child)]:mt-6 text-gray-400">
+                i also like to write. as you can tell.
+              </p> */}
+            </div>
+            <div className='flex flex-row justify-end gap-4 '>
+              <Image priority src={githubWhite} alt='linkedin logo' className='h-6 w-6'/>
+              <Image priority src={linkedinWhite} alt='linkedin logo' className='h-6 w-6'/>
+              <Image priority src={instagramWhite} alt='linkedin logo' className='h-6 w-6'/>
+            </div>
+          </div>
+          
         </div>
         {/* smart navigation divs */}
-        <div className='h-full w-max flex flex-col justify-end'>
-          <div className='h-full flex flex-col justify-end'>
-            <div className='flex max-w-max flex-row justify-end gap-1'>
+        <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-auto flex flex-col justify-center'>
+          <div className='flex flex-col justify-center'>
+            <div className='flex max-w-max flex-row justify-center gap-1'>
               {contents.map((content) => (
                 <NavCard content={content} />
               ))}
-              </div>
             </div>
           </div>
+        </div>
         </div>
 
       </div>

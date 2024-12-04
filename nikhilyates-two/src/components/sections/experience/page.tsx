@@ -56,7 +56,7 @@ const Experience = () => {
               <ExperienceCardLarge experience={dummyExperience} />
             ))}
           </div>
-          <div className='mt-8 flex flex-row w-full justify-between gap-8'>
+          <div className='flex flex-row w-full justify-between gap-8'>
             <div className='flex flex-row w-1/2 gap-8 justify-between'>
               <ExperienceCardSmall experience={dummyExperience} />
               <ExperienceCardSmall experience={dummyExperience} />
