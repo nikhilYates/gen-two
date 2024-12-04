@@ -26,7 +26,9 @@ const LandingPage = () => {
               </p> */}
             </div>
             <div className='flex flex-row justify-end gap-4 '>
-              <Image priority src={githubWhite} alt='linkedin logo' className='h-6 w-6'/>
+              <a href="https://github.com/nikhilyates" target="_blank" rel="noopener noreferrer">
+                <Image priority src={githubWhite} alt='github logo' className='h-6 w-6 cursor-pointer hover:opacity-70 transition-opacity'/>
+              </a>
               <Image priority src={linkedinWhite} alt='linkedin logo' className='h-6 w-6'/>
               <Image priority src={instagramWhite} alt='linkedin logo' className='h-6 w-6'/>
             </div>
