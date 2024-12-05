@@ -10,7 +10,7 @@ interface ExperienceCardProps {
 
 const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
   return (
-    <Card className='bg-inherit text-white border-zinc-600 rounded-2xl max-h-[50rem] hover:border-zinc-300 transition-colors ease-in-out duration-500'>
+    <Card className='bg-inherit text-white border-zinc-600 pb-6 rounded-2xl h-auto hover:border-zinc-300 transition-colors ease-in-out duration-500'>
         <CardHeader className='flex flex-row justify-between'>
             <div>
                 <CardTitle className='font-bold text-4xl'>
@@ -50,7 +50,7 @@ const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
                 </div>
             </div>
         </CardContent>
-        <CardFooter className='flex flex-row justify-end gap-1'>
+        <CardFooter className='flex flex-row justify-end gap-1 pb-1'>
             <Badge>{experience.frequency}</Badge>
             <Badge>{experience.location}</Badge>
         </CardFooter>

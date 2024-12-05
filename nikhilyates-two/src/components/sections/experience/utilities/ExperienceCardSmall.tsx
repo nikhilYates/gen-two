@@ -10,7 +10,7 @@ interface ExperienceCardProps {
 
 const ExperienceCardSmall = ({ experience }: ExperienceCardProps ) => {
   return (
-    <Card className='w-1/2 bg-inherit max-h-[50rem] text-white border-zinc-600 rounded-2xl hover:border-zinc-300 transition-colors ease-in-out duration-500'>
+    <Card className='w-full sm:w-1/2 bg-inherit h-auto text-white border-zinc-600 rounded-2xl hover:border-zinc-300 transition-colors ease-in-out duration-500'>
         <CardHeader className='flex flex-row justify-between'>
             <div>
                 <CardTitle className='font-bold text-4xl'>
@@ -25,24 +25,18 @@ const ExperienceCardSmall = ({ experience }: ExperienceCardProps ) => {
             </div>
         </CardHeader>
         <CardContent>
-            <div className='flex flex-col justify-between gap-4'>
-                <div className='w-full flex flex-col justify-start'>
-                    <h3 className='mb-2 scroll-m-20 text-2xl font-medium tracking-tight'>overview</h3>
-                    <p className='leading-7 [&:not(:first-child)] text-white'>
-                        {experience.description}
-                    </p>
-                    <div className='h-[10rem]'>
-                        <ExperienceGraph />
-                    </div>
-                    <h3 className='mt-8 mb-2 scroll-m-20 text-2xl font-medium tracking-tight'>tech</h3>
+            <div className='flex flex-col justify-between gap-4 h-full'>
+                <div className='w-[100%]'>
+                    <ExperienceGraph />
+                </div>
+                <div className='w-full'>
+                    <h3 className='mb-2 scroll-m-20 text-2xl font-medium tracking-tight'>tech</h3>
                     <div>
                     {experience.skills.map((skill, index) => (
                         <Badge key={index} className='mr-1 mb-1' variant={'destructive'}>{skill}</Badge>
                     ))}
-                        
                     </div>
                 </div>
-                
             </div>
         </CardContent>
         <CardFooter className='flex flex-row justify-end gap-1'>
