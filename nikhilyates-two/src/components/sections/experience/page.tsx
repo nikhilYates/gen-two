@@ -44,7 +44,7 @@ const dummyExperience: ExperienceType = {
 
 const Experience = () => {
   return (
-    <div className='bg-zinc-950 h-auto w-screen p-16 flex flex-col gap-8'>
+    <div id='experience' className='bg-zinc-950 h-auto w-screen p-16 flex flex-col gap-8'>
       <div className='w-full flex flex-col gap-3'>
         <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl text-white'>experience</h1>
       </div>

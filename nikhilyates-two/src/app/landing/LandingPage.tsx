@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import contents from '../../../data/contents.json';
 import NavCard from './components/NavCard';
@@ -9,6 +11,11 @@ import nyWhite from '../../../public/assets/svgs/nyWhite.svg';
 
 
 const LandingPage = () => {
+  const handleScroll = (link: string) => {
+    const element = document.getElementById(link);
+    element?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className='bg-zinc-950 h-screen p-16'>
       <div className='w-full h-full flex flex-col'>
@@ -16,14 +23,6 @@ const LandingPage = () => {
           <div className='flex flex-row justify-between'>
             <Image priority src={nyWhite} alt='linkedin logo' className='h-16 w-16'/>
             <div className="w-1/3">
-              {/* <p className="leading-7 [&:not(:first-child)]:mt-6 text-gray-400">
-                working at the intersection of tech, business, and design. yes that ven diagram exists and i'm in the center of it.
-                currently at <span className='text-blue-500'>Conduit Venture Labs</span> as a full stack engineer working in the heart of product.
-                love fast-paced work, getting on to the next project.
-              </p>
-              <p className="leading-7 [&:not(:first-child)]:mt-6 text-gray-400">
-                i also like to write. as you can tell.
-              </p> */}
             </div>
             <div className='flex flex-row justify-end gap-4 '>
               <a href="https://github.com/nikhilyates" target="_blank" rel="noopener noreferrer">
@@ -40,7 +39,11 @@ const LandingPage = () => {
           <div className='flex flex-col justify-center'>
             <div className='flex max-w-max flex-row justify-center gap-1'>
               {contents.map((content) => (
-                <NavCard content={content} />
+                <NavCard 
+                  key={content.id} 
+                  content={content} 
+                  onNavigate={handleScroll}
+                />
               ))}
             </div>
           </div>
