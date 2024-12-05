@@ -1,0 +1,66 @@
+[
+  {
+    "title": "Full-Stack Engineer",
+    "company": "Conduit Venture Labs", 
+    "category": "Software Development",
+    "skills": [
+      "JavaScript",
+      "Python", 
+      "HTML/CSS",
+      "SQL",
+      "Git",
+      "REST APIs"
+    ],
+    "tools": [
+      "VS Code",
+      "GitHub",
+      "Jira", 
+      "Postman",
+      "MySQL"
+    ],
+    "description": "Developed and maintained web applications using modern JavaScript frameworks and best practices. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+    "achievements": [
+      "Built responsive web applications serving 10k+ daily users",
+      "Improved application performance by 30% through code optimization", 
+      "Implemented automated testing reducing bugs by 40%",
+      "Contributed to successful delivery of 5 major product releases"
+    ],
+    "durationMonths": 18,
+    "startDate": "2022-01-01",
+    "endDate": "2023-06-30",
+    "location": "remote",
+    "frequency": "fulltime"
+  },
+  {
+    "title": "Founder/Software Architect",
+    "company": "ScorpionLabz",
+    "category": "ScorpionLabz",
+    "skills": [
+      "Software Design",
+      "Design",
+      "Next.js",
+      "AWS",
+      "Consulting",
+      "Project Management"
+    ],
+    "tools": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "description": "",
+    "achievements": [
+      "",
+      "",
+      "",
+      ""
+    ],
+    "durationMonths": 0,
+    "startDate": "2023-09-01",
+    "endDate": "Present",
+    "location": "Toronto",
+    "frequency": "parttime"
+  }
+]
