@@ -1,37 +1,42 @@
 [
   {
+    "id": 1,
     "title": "Full-Stack Engineer",
     "company": "Conduit Venture Labs", 
     "category": "Software Development",
     "skills": [
-      "JavaScript",
+      "TypeScript",
       "Python", 
       "HTML/CSS",
-      "SQL",
+      "PostgreSQL",
       "Git",
-      "REST APIs"
+      "RESTful APIs",
+      "LLMs",
+      "Langchain"
     ],
     "tools": [
       "VS Code",
       "GitHub",
       "Jira", 
       "Postman",
-      "MySQL"
+      "MySQL",
+      "openAI"
     ],
-    "description": "Developed and maintained web applications using modern JavaScript frameworks and best practices. Collaborated with cross-functional teams to deliver high-quality software solutions.",
+    "description": "Develop, engineer, and consult for software/hardtech products across multiple portfolio companies. Help shape early-stage business models with key technical insights.",
     "achievements": [
-      "Built responsive web applications serving 10k+ daily users",
-      "Improved application performance by 30% through code optimization", 
-      "Implemented automated testing reducing bugs by 40%",
-      "Contributed to successful delivery of 5 major product releases"
+      "built a RAG system using vector embeddings and semantic search (~85% accuracy)",
+      "integrated the LLM tool as a 'chat-bot' in a mobile app", 
+      "developed an interactive knowledge graph interface spanning 200 scientific journals",
+      "contributed to successful delivery of 4 major product releases"
     ],
-    "durationMonths": 18,
+    "durationMonths": 0,
     "startDate": "2022-01-01",
-    "endDate": "2023-06-30",
+    "endDate": "present",
     "location": "remote",
     "frequency": "fulltime"
   },
   {
+    "id": 2,
     "title": "Founder/Software Architect",
     "company": "ScorpionLabz",
     "category": "ScorpionLabz",
@@ -40,8 +45,96 @@
       "Design",
       "Next.js",
       "AWS",
+      "PaaS",
       "Consulting",
       "Project Management"
+    ],
+    "tools": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "description": "software solutions architecture firm specializing in SaaS products for startups and early stage companies.",
+    "achievements": [
+      "built, tested, and validated an accelerative, productized business model",
+      "product design led to a 100% increase in sales for e-commerce clients"
+    ],
+    "durationMonths": 0,
+    "startDate": "2023-09-01",
+    "endDate": "Present",
+    "location": "Toronto",
+    "frequency": "parttime"
+  },
+  {
+    "id": 3,
+    "title": "Private Equity Analyst",
+    "company": "Define Capital",
+    "category": "Private Equity",
+    "skills": [
+      "Financial Accounting",
+      "Financial Analysis",
+      "Data Analysis",
+      "python",
+      "Market Analysis"
+    ],
+    "tools": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "description": "sourced high-performing VMS companies, enhanced acquisition strategy, and focus on data-driven automation/insight to drive deal success",
+    "achievements": [
+      "completed financial modelling supporting a multi-million dollar acquisition ",
+      "engineered + developed a sourcing solution cutting lead id time by 50%"
+    ],
+    "durationMonths": 4,
+    "startDate": "2023-05-01",
+    "endDate": "2023-09-01",
+    "location": "remote",
+    "frequency": "internship"
+  },
+  {
+    "id": 4,
+    "title": "Software Developer",
+    "company": "York University",
+    "category": "Software Development",
+    "skills": [
+      "C",
+      "RTOS",
+      "Bash",
+      "Ubuntu"
+    ],
+    "tools": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "description": "optimized OBC solutions for the ESSENCE CubeSat",
+    "achievements": [
+      "developed a function that prevented satellite spin-up",
+      "supported the operation through contributions to the TRR presentation to the CSA"
+    ],
+    "durationMonths": 4,
+    "startDate": "2021-10-01",
+    "endDate": "2022-02-01",
+    "location": "In Person",
+    "frequency": "Volunteer"
+  },
+  {
+    "id": 5,
+    "title": "IT Technician",
+    "company": "Omira Group",
+    "category": "IT",
+    "skills": [
+      "Windows Server",
+      "Computer Hardware",
+      "NAS"
     ],
     "tools": [
       "",
@@ -53,14 +146,13 @@
     "description": "",
     "achievements": [
       "",
-      "",
-      "",
       ""
     ],
-    "durationMonths": 0,
-    "startDate": "2023-09-01",
-    "endDate": "Present",
-    "location": "Toronto",
+    "durationMonths": 19,
+    "startDate": "2021-09-01",
+    "endDate": "2023-04-01",
+    "location": "In Person",
     "frequency": "parttime"
   }
+
 ]

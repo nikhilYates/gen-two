@@ -1,4 +1,5 @@
 export type ExperienceType = {
+    id: number,
     title: string,
     company: string,
     category: string,
@@ -7,8 +8,8 @@ export type ExperienceType = {
     description: string,
     achievements: string[] 
     durationMonths: number,
-    startDate: Date,
-    endDate: Date,
+    startDate: string,
+    endDate: string,
     location: string,
     frequency: string
 }

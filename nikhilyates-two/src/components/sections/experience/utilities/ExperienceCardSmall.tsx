@@ -9,19 +9,23 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCardSmall = ({ experience }: ExperienceCardProps ) => {
+  if (!experience) {
+    return null;
+  }
+
   return (
     <Card className='w-full sm:w-1/2 bg-inherit h-auto text-white border-zinc-600 rounded-2xl hover:border-zinc-300 transition-colors ease-in-out duration-500'>
         <CardHeader className='flex flex-row justify-between'>
             <div>
                 <CardTitle className='font-bold text-4xl'>
-                {experience.title ?? 'Job Title'}
+                {experience?.title ?? 'Job Title'}
                 </CardTitle>
                 <CardDescription className='mt-1 text-2xl font-bold'>
                     {experience.company ?? 'Company Name'}
                 </CardDescription>
             </div>
             <div>
-                <Badge variant={'secondary'} className='text-black'>{experience.startDate.toLocaleDateString()} - {experience.endDate.toLocaleDateString()}</Badge>
+                <Badge variant={'secondary'} className='text-black'>{experience.startDate} - {experience.endDate}</Badge>
             </div>
         </CardHeader>
         <CardContent>
