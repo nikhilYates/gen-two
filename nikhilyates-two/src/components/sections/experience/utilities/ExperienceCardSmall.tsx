@@ -30,7 +30,7 @@ const ExperienceCardSmall = ({ experience }: ExperienceCardProps ) => {
         </CardHeader>
         <CardContent>
             <div className='flex flex-col justify-between gap-4 h-full'>
-                <div className='w-[100%]'>
+                <div className='w-[90%]'>
                     <ExperienceGraph />
                 </div>
                 <div className='w-full'>

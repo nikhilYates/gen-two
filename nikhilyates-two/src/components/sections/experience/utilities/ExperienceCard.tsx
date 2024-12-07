@@ -61,4 +61,4 @@ const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
     )
 }
 
-export default ExperienceCardLarge
+export default ExperienceCardLarge;

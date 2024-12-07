@@ -31,9 +31,18 @@
     ],
     "durationMonths": 0,
     "startDate": "2022-01-01",
-    "endDate": "present",
+    "endDate": "Present",
     "location": "remote",
-    "frequency": "fulltime"
+    "frequency": "fulltime",
+    "chartData": [
+      { "label": "Project Management", "desktop": 160},
+      { "label": "SaaS", "desktop": 120},
+      { "label": "Product", "desktop": 140},
+      { "label": "Software Design", "desktop": 180},
+      { "label": "Finance", "desktop": 80},
+      { "label": "AI/ML", "desktop": 175},
+      { "label": "Data", "desktop": 150}
+    ]
   },
   {
     "id": 2,
@@ -86,10 +95,11 @@
       "",
       ""
     ],
-    "description": "sourced high-performing VMS companies, enhanced acquisition strategy, and focus on data-driven automation/insight to drive deal success",
+    "description": "sourced high-performing VMS companies, enhanced acquisition strategy, and focused on data-driven automation/insight to drive deal success. The only engineer in a team of MBAs and finance majors",
     "achievements": [
       "completed financial modelling supporting a multi-million dollar acquisition ",
-      "engineered + developed a sourcing solution cutting lead id time by 50%"
+      "engineered + developed a data management solution cutting lead id time by 50%",
+      "accelerated sourcing time by 5% week over week"
     ],
     "durationMonths": 4,
     "startDate": "2023-05-01",
