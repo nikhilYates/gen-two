@@ -17,16 +17,17 @@ import { Textarea } from "@/components/ui/textarea"
 
 
 const formSchema = z.object({
-    name: z.string().min(2, {
-        message: "enter a name"
-    }).max(50),
-    email: z.string().email({
-        message: "enter a valid email address"
-    }),
-    message: z.string().min(10, {
-        message: 'no spam please. how can i help?'
-    }
-    ).max(500),
+    name: z.string()
+        .min(2, { message: "enter a name" })
+        .max(50)
+        .nonempty({ message: "name is required" }),
+    email: z.string()
+        .email({ message: "enter a valid email address" })
+        .nonempty({ message: "email is required" }),
+    message: z.string()
+        .min(10, { message: 'no spam please. how can i help?' })
+        .max(500)
+        .nonempty({ message: "message is required" }),
 });
 
 export function ContactForm() {
@@ -41,68 +42,87 @@ export function ContactForm() {
     }
 
     return (
-        <div id='experience' className='bg-zinc-950 h-screen w-screen p-16 flex flex-col gap-8'>
+        <div id='contact' className='bg-zinc-950 h-screen w-screen p-16 flex flex-col gap-8'>
             <div className='w-full flex flex-col gap-3'>
                 <h1 className='scroll-m-20 text-4xl font-extralight tracking-tight lg:text-8xl text-white'>contact</h1>
             </div>
             <div className="w-full flex flex-row justify-center">
-                <div className="w-[50%]">
+                <div className="md:w-full lg:w-[50%]">
                     <Form {...form}>
                         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-                            <FormField
-                            control={form.control}
-                            name="name"
-                            render={({ field }) => (
-                                <div className="rounded-2xl p-8 border border-gray-400 transition-all 
-                                    duration-1000 hover:border-white">
-                                    <FormItem>
-                                        <FormControl>
-                                            <Input 
-                                                type='text' 
-                                                placeholder="your name" 
-                                                className="bg-black text-white placeholder:text-gray-400"
-                                                {...field}
-                                            />
-                                        </FormControl>
-                                        <FormDescription>
-                                            name
-                                        </FormDescription>
-                                        <FormMessage />
-                                    </FormItem>
+                            <div className="rounded-2xl pt-8 flex flex-col gap-4">
+                                
+                                <FormField
+                                    control={form.control}
+                                    name="name"
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel className="text-white">name</FormLabel>
+                                            <FormControl>
+                                                <Input
+                                                    id="name" 
+                                                    type='text' 
+                                                    placeholder="your name" 
+                                                    className="bg-zinc-950 placeholder:text-gray-400 border border-gray-400 text-zinc-100"
+                                                    {...field}
+                                                />
+                                            </FormControl>
+                                            <FormDescription>
+                                                why would you even want to enter an alias
+                                            </FormDescription>
+                                            <FormMessage />
+                                        </FormItem>
+                                    )}
+                                />
 
-                                    <FormItem>
-                                        <FormControl>
-                                            <Input 
-                                                type='email' 
-                                                placeholder="your@emailor.whatever" 
-                                                className="bg-zinc-950 text-white placeholder:text-gray-400"
-                                                {...field}
-                                            />
-                                        </FormControl>
-                                        <FormDescription>
-                                            email
-                                        </FormDescription>
-                                        <FormMessage />
-                                    </FormItem>
+                                <FormField
+                                    control={form.control}
+                                    name="email"
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel className="text-white">email</FormLabel>
+                                            <FormControl>
+                                                <Input 
+                                                    id="email"
+                                                    type='email' 
+                                                    placeholder="your@emailor.whatever" 
+                                                    className="bg-zinc-950 placeholder:text-gray-400 border border-gray-400 text-zinc-100"
+                                                    {...field}
+                                                />
+                                            </FormControl>
+                                            <FormDescription>
+                                                a real one so i can get back to you if i feel like it
+                                            </FormDescription>
+                                            <FormMessage />
+                                        </FormItem>
+                                    )}
+                                />
 
-                                    <FormItem>
-                                        <FormLabel className="text-white">get as detailed as you want here btw</FormLabel>
-                                        <FormControl>
-                                            <Textarea 
-                                                placeholder="what do you want to chat about?" 
-                                                id='message-2'
-                                                className="bg-zinc-950 text-white placeholder:text-gray-400"
-                                            />
-                                        </FormControl>
-                                        <FormDescription>
-                                            message
-                                        </FormDescription>
-                                        <FormMessage />
-                                    </FormItem>
-                                    <Button type="submit">Submit</Button>
+                                <FormField
+                                    control={form.control}
+                                    name="message"
+                                    render={({ field }) => (
+                                        <FormItem>
+                                            <FormLabel className="text-white">message</FormLabel>
+                                            <FormControl>
+                                                <Textarea 
+                                                    placeholder="what do you want to chat about?" 
+                                                    id='message-2'
+                                                    className="bg-zinc-950 min-h-[20rem] placeholder:text-gray-400 border border-gray-400 text-zinc-100"
+                                                    {...field}
+                                                />
+                                            </FormControl>
+                                            <FormDescription>
+                                                i'll report you to csis/cia if you spam me i swear
+                                            </FormDescription>
+                                            <FormMessage />
+                                        </FormItem>
+                                    )}
+                                />
+                                <div className='w-full flex flex-row justify-center'>
+                                    <Button type="submit" variant={'secondary'}><b>Submit</b></Button>
                                 </div>
-                            )}
-                            />
+                            </div>
                         </form>
                     </Form>
                 </div>
