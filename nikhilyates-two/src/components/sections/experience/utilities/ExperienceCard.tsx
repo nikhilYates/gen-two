@@ -13,13 +13,13 @@ const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
     if(!experience) return null;
 
     return (
-        <Card className='bg-inherit text-white border-zinc-600 rounded-2xl h-auto hover:border-zinc-300 transition-colors ease-in-out duration-500 flex flex-col'>
+        <Card className='bg-inherit w-full text-white border-zinc-600 rounded-2xl h-auto hover:border-zinc-300 transition-colors ease-in-out duration-500 flex flex-col'>
             <CardHeader className='flex flex-row justify-between'>
                 <div>
-                    <CardTitle className='font-bold text-4xl'>
+                    <CardTitle className='font-bold text-2xl md:text-4xl'>
                     {experience.title ?? 'Job Title'}
                     </CardTitle>
-                    <CardDescription className='mt-1 text-2xl font-bold'>
+                    <CardDescription className='mt-1 text-2xl md:text-4xl font-light'>
                         {experience.company ?? 'Company Name'}
                     </CardDescription>
                 </div>
@@ -29,8 +29,8 @@ const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
             </CardHeader>
             <CardContent className='flex-grow'>
                 <div className='flex flex-col h-full'>
-                    <div className='flex flex-row justify-between gap-2 flex-grow'>
-                        <div className='w-1/2 flex flex-col justify-start'>
+                    <div className='flex flex-col lg:flex-row justify-between gap-2 flex-grow'>
+                        <div className='w-full lg:w-full flex flex-col justify-start'>
                             <h3 className='mb-2 scroll-m-20 text-2xl font-medium tracking-tight'>overview</h3>
                             <p className='leading-7 [&:not(:first-child)] text-white'>
                                 {experience.description}
@@ -42,7 +42,7 @@ const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
                                 ))}
                             </ul>
                         </div>
-                        <div className='w-1/2'>
+                        <div className='w-full lg:w-full'>
                             <ExperienceGraph chartData={experience.chartData!} chartColor={experience.id}/>
                         </div>
                     </div>

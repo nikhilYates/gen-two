@@ -12,7 +12,7 @@ const Experience = () => {
       <div className='w-full flex flex-col gap-3'>
         <h1 className='scroll-m-20 text-4xl font-extralight tracking-tight lg:text-8xl text-white'>experience</h1>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-8'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 gap-8'>
         {/* Top Left */}
         <ExperienceCardLarge experience={data[0]} />
         
@@ -23,7 +23,7 @@ const Experience = () => {
         <ExperienceCardLarge experience={data[2]} />
         
         {/* Bottom Right - Two small cards */}
-        <div className='flex flex-col sm:flex-row gap-8'>
+        <div className='flex flex-col lg:flex-row gap-8'>
           <ExperienceCardSmall experience={data[3]} />
           <ExperienceCardSmall experience={data[4]} />
         </div>
