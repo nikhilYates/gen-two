@@ -3,30 +3,35 @@
         "id": 1,
         "title": "about",
         "description": "my work, my passions, my inspirat- just kidding. just some stuff about me",
-        "photoUrl": ""
+        "photoUrl": "",
+        "link": "about"
     },
     {
         "id": 2,
         "title": "experience",
         "description": "you and i are not the same",
-        "photoUrl": ""
+        "photoUrl": "",
+        "link": "experience"
     },
     {
         "id": 3,
         "title": "portfolio",
         "description": "showcase of what i can do. no, you probably can't do what i've done.",
-        "photoUrl": ""
+        "photoUrl": "",
+        "link": ""
     },
     {
         "id": 4,
         "title": "contact",
         "description": "i know, i know - you're begging to hire me",
-        "photoUrl": ""
+        "photoUrl": "",
+        "link": ""
     },
     {
         "id": 5,
         "title": "scorpionlabz",
         "description": "what does it mean to build a business?",
-        "photoUrl": ""
+        "photoUrl": "",
+        "link": ""
     }
 ]

@@ -19,5 +19,6 @@ export type NavigationContentType = {
     id: number,
     title: string,
     description: string,
-    photoUrl: string
+    photoUrl: string,
+    link: string
 }
