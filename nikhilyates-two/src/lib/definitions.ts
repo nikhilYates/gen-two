@@ -1,17 +1,19 @@
 export type ExperienceType = {
-    title: string,
-    company: string,
-    category: string,
-    skills: string[],
-    tools: string[],
-    description: string,
-    achievements: string[] 
-    durationMonths: number,
-    startDate: Date,
-    endDate: Date,
-    location: string,
-    frequency: string
-}
+    id: number;
+    title: string;
+    company: string;
+    category: string;
+    skills: string[];
+    tools: string[];
+    description: string;
+    achievements: string[];
+    durationMonths: number;
+    startDate: string;
+    endDate: string;
+    location: string;
+    frequency: string;
+    chartData?: { label: string; desktop: number; }[]; // Made chartData optional with ?
+};
 
 export type NavigationContentType = {
     id: number,

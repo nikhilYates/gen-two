@@ -40,7 +40,7 @@ const LandingPage = () => {
           <div className='flex flex-col justify-center'>
             <div className='flex max-w-max flex-row justify-center gap-1'>
               {contents.map((content) => (
-                <NavCard content={content} />
+                <NavCard key={content.id} content={content} />
               ))}
             </div>
           </div>
