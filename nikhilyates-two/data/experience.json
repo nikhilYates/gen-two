@@ -35,12 +35,12 @@
     "location": "remote",
     "frequency": "fulltime",
     "chartData": [
-      { "label": "Project Management", "desktop": 160},
-      { "label": "SaaS", "desktop": 120},
-      { "label": "Product", "desktop": 140},
-      { "label": "Software Design", "desktop": 180},
-      { "label": "Finance", "desktop": 80},
-      { "label": "AI/ML", "desktop": 175},
+      { "label": "Project Management", "desktop": 125},
+      { "label": "SaaS", "desktop": 200},
+      { "label": "Product", "desktop": 150},
+      { "label": "Software Design", "desktop": 175},
+      { "label": "Finance", "desktop": 100},
+      { "label": "AI/ML", "desktop": 150},
       { "label": "Data", "desktop": 150}
     ]
   },
@@ -74,7 +74,16 @@
     "startDate": "2023-09-01",
     "endDate": "Present",
     "location": "Toronto",
-    "frequency": "parttime"
+    "frequency": "parttime",
+    "chartData": [
+      { "label": "Project Management", "desktop": 200},
+      { "label": "SaaS", "desktop": 150},
+      { "label": "Product", "desktop": 150},
+      { "label": "Software Design", "desktop": 175},
+      { "label": "Finance", "desktop": 50},
+      { "label": "AI/ML", "desktop": 75},
+      { "label": "Data", "desktop": 125}
+    ]
   },
   {
     "id": 3,
@@ -105,7 +114,16 @@
     "startDate": "2023-05-01",
     "endDate": "2023-09-01",
     "location": "remote",
-    "frequency": "internship"
+    "frequency": "internship",
+    "chartData": [
+      { "label": "Project Management", "desktop": 150},
+      { "label": "SaaS", "desktop": 75},
+      { "label": "Product", "desktop": 100},
+      { "label": "Software Design", "desktop": 150},
+      { "label": "Finance", "desktop": 200},
+      { "label": "AI/ML", "desktop": 50},
+      { "label": "Data", "desktop": 175}
+    ]
   },
   {
     "id": 4,
@@ -134,7 +152,16 @@
     "startDate": "2021-10-01",
     "endDate": "2022-02-01",
     "location": "In Person",
-    "frequency": "Volunteer"
+    "frequency": "Volunteer",
+    "chartData": [
+      { "label": "Project Management", "desktop": 50},
+      { "label": "SaaS", "desktop": 50},
+      { "label": "Product", "desktop": 75},
+      { "label": "Software Design", "desktop": 150},
+      { "label": "Finance", "desktop": 50},
+      { "label": "AI/ML", "desktop": 50},
+      { "label": "Data", "desktop": 150}
+    ]
   },
   {
     "id": 5,
@@ -162,7 +189,16 @@
     "startDate": "2021-09-01",
     "endDate": "2023-04-01",
     "location": "In Person",
-    "frequency": "parttime"
+    "frequency": "parttime",
+    "chartData": [
+      { "label": "Project Management", "desktop": 125},
+      { "label": "SaaS", "desktop": 50},
+      { "label": "Product", "desktop": 50},
+      { "label": "Software Design", "desktop": 50},
+      { "label": "Finance", "desktop": 50},
+      { "label": "AI/ML", "desktop": 50},
+      { "label": "Data", "desktop": 125}
+    ]
   }
 
 ]

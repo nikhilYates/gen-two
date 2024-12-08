@@ -14,7 +14,7 @@ const ExperienceCardSmall = ({ experience }: ExperienceCardProps ) => {
   }
 
   return (
-    <Card className='w-full sm:w-1/2 bg-inherit h-auto text-white border-zinc-600 rounded-2xl hover:border-zinc-300 transition-colors ease-in-out duration-500'>
+    <Card className='w-full sm:w-1/2 bg-inherit h-auto text-white border-zinc-600 rounded-2xl hover:border-zinc-300 transition-colors ease-in-out duration-500 flex flex-col'>
         <CardHeader className='flex flex-row justify-between'>
             <div>
                 <CardTitle className='font-bold text-4xl'>
@@ -28,10 +28,10 @@ const ExperienceCardSmall = ({ experience }: ExperienceCardProps ) => {
                 <Badge variant={'secondary'} className='text-black'>{experience.startDate} - {experience.endDate}</Badge>
             </div>
         </CardHeader>
-        <CardContent>
+        <CardContent className='flex-grow'>
             <div className='flex flex-col justify-between gap-4 h-full'>
                 <div className='w-[90%]'>
-                    <ExperienceGraph />
+                    <ExperienceGraph chartData={experience.chartData!} chartColor={experience.id}/>
                 </div>
                 <div className='w-full'>
                     <h3 className='mb-2 scroll-m-20 text-2xl font-medium tracking-tight'>tech</h3>
@@ -43,7 +43,7 @@ const ExperienceCardSmall = ({ experience }: ExperienceCardProps ) => {
                 </div>
             </div>
         </CardContent>
-        <CardFooter className='flex flex-row justify-end gap-1'>
+        <CardFooter className='flex flex-row justify-end gap-1 mt-auto'>
             <Badge>{experience.frequency}</Badge>
             <Badge>{experience.location}</Badge>
         </CardFooter>
