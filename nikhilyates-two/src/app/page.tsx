@@ -10,8 +10,8 @@ export default function Home() {
       <LandingPage />
       <About />
       <Experience />
-      <ContactForm />
       <Portfolio />
+      <ContactForm />
     </div>
   );
 }
