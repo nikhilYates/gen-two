@@ -1,6 +1,7 @@
 import LandingPage from "./landing/LandingPage";
 import Experience from "@/components/sections/experience/page";
 import About from "@/app/about/page";
+import { ContactForm } from "@/app/contact/page"
 import Portfolio from "@/app/portfolio/page"
 
 export default function Home() {
@@ -9,6 +10,7 @@ export default function Home() {
       <LandingPage />
       <About />
       <Experience />
+      <ContactForm />
       <Portfolio />
     </div>
   );

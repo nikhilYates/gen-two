@@ -1,0 +1,204 @@
+[
+  {
+    "id": 1,
+    "title": "Full-Stack Engineer",
+    "company": "Conduit Venture Labs", 
+    "category": "Software Development",
+    "skills": [
+      "TypeScript",
+      "Python", 
+      "HTML/CSS",
+      "PostgreSQL",
+      "Git",
+      "RESTful APIs",
+      "LLMs",
+      "Langchain"
+    ],
+    "tools": [
+      "VS Code",
+      "GitHub",
+      "Jira", 
+      "Postman",
+      "MySQL",
+      "openAI"
+    ],
+    "description": "Develop, engineer, and consult for software/hardtech products across multiple portfolio companies. Help shape early-stage business models with key technical insights.",
+    "achievements": [
+      "built a RAG system using vector embeddings and semantic search (~85% accuracy)",
+      "integrated the LLM tool as a 'chat-bot' in a mobile app", 
+      "developed an interactive knowledge graph interface spanning 200 scientific journals",
+      "contributed to successful delivery of 4 major product releases"
+    ],
+    "durationMonths": 0,
+    "startDate": "2022-01-01",
+    "endDate": "Present",
+    "location": "remote",
+    "frequency": "fulltime",
+    "chartData": [
+      { "label": "Project Management", "desktop": 125},
+      { "label": "SaaS", "desktop": 200},
+      { "label": "Product", "desktop": 150},
+      { "label": "Software Design", "desktop": 175},
+      { "label": "Finance", "desktop": 100},
+      { "label": "AI/ML", "desktop": 150},
+      { "label": "Data", "desktop": 150}
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Founder/Software Architect",
+    "company": "ScorpionLabz",
+    "category": "ScorpionLabz",
+    "skills": [
+      "Software Design",
+      "Design",
+      "Next.js",
+      "AWS",
+      "PaaS",
+      "Consulting",
+      "Project Management"
+    ],
+    "tools": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "description": "software solutions architecture firm specializing in SaaS products for startups and early stage companies.",
+    "achievements": [
+      "built, tested, and validated an accelerative, productized business model",
+      "product design led to a 100% increase in sales for e-commerce clients"
+    ],
+    "durationMonths": 0,
+    "startDate": "2023-09-01",
+    "endDate": "Present",
+    "location": "Toronto",
+    "frequency": "parttime",
+    "chartData": [
+      { "label": "Project Management", "desktop": 200},
+      { "label": "SaaS", "desktop": 150},
+      { "label": "Product", "desktop": 150},
+      { "label": "Software Design", "desktop": 175},
+      { "label": "Finance", "desktop": 50},
+      { "label": "AI/ML", "desktop": 75},
+      { "label": "Data", "desktop": 125}
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Private Equity Analyst",
+    "company": "Define Capital",
+    "category": "Private Equity",
+    "skills": [
+      "Financial Accounting",
+      "Financial Analysis",
+      "Data Analysis",
+      "python",
+      "Market Analysis"
+    ],
+    "tools": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "description": "sourced high-performing VMS companies, enhanced acquisition strategy, and focused on data-driven automation/insight to drive deal success. The only engineer in a team of MBAs and finance majors",
+    "achievements": [
+      "completed financial modelling supporting a multi-million dollar acquisition ",
+      "engineered + developed a data management solution cutting lead id time by 50%",
+      "accelerated sourcing time by 5% week over week"
+    ],
+    "durationMonths": 4,
+    "startDate": "2023-05-01",
+    "endDate": "2023-09-01",
+    "location": "remote",
+    "frequency": "internship",
+    "chartData": [
+      { "label": "Project Management", "desktop": 150},
+      { "label": "SaaS", "desktop": 75},
+      { "label": "Product", "desktop": 100},
+      { "label": "Software Design", "desktop": 150},
+      { "label": "Finance", "desktop": 200},
+      { "label": "AI/ML", "desktop": 50},
+      { "label": "Data", "desktop": 175}
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Software Developer",
+    "company": "York University",
+    "category": "Software Development",
+    "skills": [
+      "C",
+      "RTOS",
+      "Bash",
+      "Ubuntu"
+    ],
+    "tools": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "description": "optimized OBC solutions for the ESSENCE CubeSat",
+    "achievements": [
+      "developed a function that prevented satellite spin-up",
+      "supported the operation through contributions to the TRR presentation to the CSA"
+    ],
+    "durationMonths": 4,
+    "startDate": "2021-10-01",
+    "endDate": "2022-02-01",
+    "location": "In Person",
+    "frequency": "Volunteer",
+    "chartData": [
+      { "label": "Project Management", "desktop": 50},
+      { "label": "SaaS", "desktop": 50},
+      { "label": "Product", "desktop": 75},
+      { "label": "Software Design", "desktop": 150},
+      { "label": "Finance", "desktop": 50},
+      { "label": "AI/ML", "desktop": 50},
+      { "label": "Data", "desktop": 150}
+    ]
+  },
+  {
+    "id": 5,
+    "title": "IT Technician",
+    "company": "Omira Group",
+    "category": "IT",
+    "skills": [
+      "Windows Server",
+      "Computer Hardware",
+      "NAS"
+    ],
+    "tools": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "description": "",
+    "achievements": [
+      "",
+      ""
+    ],
+    "durationMonths": 19,
+    "startDate": "2021-09-01",
+    "endDate": "2023-04-01",
+    "location": "In Person",
+    "frequency": "parttime",
+    "chartData": [
+      { "label": "Project Management", "desktop": 125},
+      { "label": "SaaS", "desktop": 50},
+      { "label": "Product", "desktop": 50},
+      { "label": "Software Design", "desktop": 50},
+      { "label": "Finance", "desktop": 50},
+      { "label": "AI/ML", "desktop": 50},
+      { "label": "Data", "desktop": 125}
+    ]
+  }
+
+]
