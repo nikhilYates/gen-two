@@ -8,6 +8,8 @@ import linkedinWhite from '../../../public/assets/svgs/linkedinWhite.svg';
 import instagramWhite from '../../../public/assets/svgs/instagramWhite.svg';
 import githubWhite from '../../../public/assets/svgs/githubWhite.svg';
 import nyWhite from '../../../public/assets/svgs/nyWhite.svg';
+import arrowTurnDownLeft from '../../../public/assets/svgs/hero/ArrowTurnDownLeft.svg';
+
 
 
 const LandingPage = () => {

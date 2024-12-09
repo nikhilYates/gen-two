@@ -14,6 +14,8 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import arrowTurnDownLeft from '../../../public/assets/svgs/hero/ArrowTurnDownLeft.svg';
+import Image from 'next/image';
 
 
 const formSchema = z.object({
@@ -119,8 +121,11 @@ export function ContactForm() {
                                         </FormItem>
                                     )}
                                 />
-                                <div className='w-full flex flex-row justify-center'>
-                                    <Button type="submit" variant={'secondary'}><b>Submit</b></Button>
+                                <div className='w-full flex flex-row justify-center gap-4'>
+                                    <Button type="submit" variant={'secondary'}>
+                                        <b>Submit</b>
+                                        <Image priority src={arrowTurnDownLeft} alt='arrow-turn-down-left' className='h-5 w-5'/>
+                                    </Button>
                                 </div>
                             </div>
                         </form>
