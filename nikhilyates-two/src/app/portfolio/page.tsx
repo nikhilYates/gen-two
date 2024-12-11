@@ -23,6 +23,7 @@ import {
     AccordionItem,
     AccordionTrigger,
   } from "@/components/ui/accordion"
+import InfoContainer from './components/leftMain/page'
   
 
 import file from '../../../public/assets/svgs/hero/File.svg'
@@ -119,7 +120,7 @@ const Portfolio = () => {
                 <div className='h-full w-full flex flex-col gap-4'>
                     <div className='w-full flex flex-row gap-4 h-[75%]'>
                         <div className='flex-1 border rounded-lg border-zinc-800'>
-                            
+                            <InfoContainer />
                         </div>
                         <div className='flex-1 border rounded-lg border-zinc-800'>
 
