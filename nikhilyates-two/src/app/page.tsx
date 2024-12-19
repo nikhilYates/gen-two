@@ -3,6 +3,7 @@ import Experience from "@/components/sections/experience/page";
 import About from "@/app/about/page";
 import { ContactForm } from "@/app/contact/ContactForm"
 import Portfolio from "@/app/portfolio/page"
+import Footer from "@/app/footer/page"
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Experience />
       <Portfolio />
       <ContactForm />
+      <Footer />
     </div>
   );
 }
