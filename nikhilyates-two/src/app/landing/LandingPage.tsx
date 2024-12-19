@@ -19,7 +19,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className='bg-zinc-950 h-screen p-16'>
+    <div id='home' className='bg-zinc-950 h-screen p-16'>
       <div className='w-full h-full flex flex-col'>
         <div className='h-full w-full flex flex-col justify-top'>
           <div className='flex flex-row justify-between'>
