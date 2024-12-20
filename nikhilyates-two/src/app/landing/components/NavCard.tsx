@@ -1,5 +1,6 @@
 import React from 'react'
 import { NavigationContentType } from '@/lib/definitions';
+import experience from '../../../../public/assets/images/navCards/experience.jpg'
 
 
 interface NavCardProps {
@@ -15,6 +16,11 @@ const NavCard = ({ content, onNavigate }: NavCardProps) => {
         key={content.id} 
         className='opacity-50 rounded-2xl w-[12rem] h-[22rem] overflow-hidden flex flex-col items-start justify-end 
         border-[0.25rem] border-gray-400 cursor-pointer transition-all duration-1000 hover:w-[24rem] hover:opacity-100'
+        style={{ 
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${content.photoUrl})`, 
+            backgroundSize: 'cover', 
+            backgroundPosition: 'left' 
+        }}
         onClick={() => onNavigate(content.link)}
     >
         <div className='transform whitespace-nowrap text-left p-4'>

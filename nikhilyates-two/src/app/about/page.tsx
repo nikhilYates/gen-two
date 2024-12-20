@@ -14,7 +14,6 @@ const About = () => {
             <h1 className='scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-8xl text-zinc-500 leading-10'>
                 want to collaborate? let's get in <span className='underline text-white'>contact.</span>
             </h1>
-
         </div>
     )
 }

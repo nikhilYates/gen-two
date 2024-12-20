@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "name": "RRT-based Path Finding Algorithm",
+        "filename": "rrt_pathfinding.alg",
+        "category": "robotics",
+        "overview": "RRT-based path planning algorithm for a robot simulation in 3D space to navigate a maze. Algorithm design and implementation was done in 48 hours with AditJainn. Programming was done in python using the numpy and scipy libraries. A black and white blueprint image of the maze was fed to the system, which produced a set of waypoints and a clear path from origin to goal that our robot used to successfully maneuver the 3D maze in the Gazebo simulation environment.",
+        "skills": [
+            "python",
+            "scipy",
+            "numpy",
+            "advanced algorithms",
+            "robotics",
+            "simulation"
+        ],
+        "date": "November 2023",
+        "link": "",
+        "mediaUrl": "assets/images/projects/preview_llm.png"
+    },
+    {
+        "id": 2,
+        "name": "Large Language Models Based Test Case Generation",
+        "filename": "llm_tc_gen.ppr",
+        "category": "(art)ificial-intel",
+        "overview": "Led by a distinguished professor in the Electrical Engineering and Computer Science department, my research builds on a previous project (in collaboration with Meta) and I perform a comprehensive analysis of the differences between traditional and LLM-generated python tests in both commercial and non-professional contexts. Presented my research and conclusions in front of a panel of researching faculty, staff, and students. Grade: A+ ",
+        "skills": [
+            "python",
+            "Java",
+            "LLMs",
+            "research",
+            "pynguin",
+            "comparative analysis"
+        ],
+        "date": "December 2023",
+        "link": "",
+        "mediaUrl": "assets/images/projects/preview_llm.png"
+    },
+    {
+        "id": 3,
+        "name": "Blockchain Cryptocurrency Project",
+        "filename": "blockchain.proj",
+        "category": "saas-and-web",
+        "overview": "Built with Node js, this project follows blockchain programming principles and simulates the backend (server-side) of a cryptocurrency; documenting transaction history/details (pooling), transaction mining, chain validation and replacement, maintaining a node’s wallet, and security stops. Focused on transaction and wallet encryption and engineered my own version of the SHA256 algorithm. This project is being revisited and will be expanded in 2025 as a web application.",
+        "skills": [
+            "Node.js",
+            "blockchain development",
+            "web3",
+            "P2P servers"
+        ],
+        "date": "June 2022",
+        "link": "",
+        "mediaUrl": "assets/images/projects/preview_llm.png"
+    }
+]
