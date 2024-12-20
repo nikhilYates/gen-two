@@ -8,7 +8,7 @@ import data from '../../../../data/experience.json'
 
 const Experience = () => {
   return (
-    <div id='experience' className='bg-zinc-950 h-auto w-screen p-16 flex flex-col gap-8'>
+    <div id='experience' className='bg-zinc-950 h-auto w-screen p-8 lg:p-16 flex flex-col gap-8'>
       <div className='w-full flex flex-col gap-3'>
         <h1 className='scroll-m-20 text-4xl font-extralight tracking-tight lg:text-8xl text-white'>experience</h1>
       </div>

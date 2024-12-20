@@ -19,8 +19,8 @@ const LandingPage = () => {
   };
 
   return (
-    <div id='home' className='bg-zinc-950 h-screen p-16'>
-      <div className='w-full h-full flex flex-col'>
+    <div id='home' className='bg-zinc-950 h-screen p-8 lg:p-16'>
+      <div className='w-full h-full flex flex-col gap-4 lg:gap-0'>
         <div className='h-full w-full flex flex-col justify-top'>
           <div className='flex flex-row justify-between'>
             <Image priority src={nyWhite} alt='linkedin logo' className='h-16 w-16'/>
@@ -37,9 +37,9 @@ const LandingPage = () => {
           
         </div>
         {/* smart navigation divs */}
-        <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-auto flex flex-col justify-center'>
+        <div className='lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:w-auto flex flex-col justify-center'>
           <div className='flex flex-col justify-center'>
-            <div className='flex max-w-max flex-row justify-center gap-1'>
+            <div className='flex max-w-max flex-col justify-center gap-1'>
               {contents.map((content) => (
                 <NavCard 
                   key={content.id} 
