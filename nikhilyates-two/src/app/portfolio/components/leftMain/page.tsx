@@ -1,24 +1,39 @@
 import react from 'react'
 import Image from 'next/image'
+import { ProjectType } from '@/lib/definitions'
 
-const InfoContainer = () => {
+type InfoContainerProps = {
+    project: ProjectType | null;
+}
 
+
+const InfoContainer: React.FC<InfoContainerProps> = ({ project }) => {
+    if(!project) return;
     return (
-        <div className='w-full h-full flex flex-row justify-start p-4 gap-4'>
-            <div className='h-full w-auto flex flex-col justify-start gap-1'>
-                <p className='text-zinc-600'>1</p>
-                <p className='text-zinc-600'>2</p>
-                <p className='text-zinc-600'>3</p>
-                <p className='text-zinc-600'>4</p>
-                <p className='text-zinc-600'>5</p>
-                <p className='text-zinc-600'>6</p>
-                <p className='text-zinc-600'>7</p>
-            </div>
-            <div className='w-full overflow-x-auto'>
-                <p className='text-orange-400'>overview</p>
-                <p className='text-white'>this project was about this and this and that</p>
-                <p className='text-white'></p>
-                <p className='text-white'>this project was about this and this and that</p>
+        <div className='w-full h-full flex flex-col justify-between p-4 gap-4'>
+            <h1 className='text-white/50 text-2xl'>project overview</h1>
+            <div className='w-full h-full flex flex-row justify-start gap-4'>
+                <div className='h-full w-auto flex flex-col justify-start'>
+                    <p className='text-zinc-600 leading-[1.7rem]'>1</p>
+                    <p className='text-zinc-600 leading-[1.7rem]'>2</p>
+                    <p className='text-zinc-600 leading-[1.7rem]'>3</p>
+                    <p className='text-zinc-600 leading-[1.7rem]'>4</p>
+                    <p className='text-zinc-600 leading-[1.7rem]'>5</p>
+                    <p className='text-zinc-600 leading-[1.7rem]'>6</p>
+                    <p className='text-zinc-600 leading-[1.7rem]'>8</p>
+                    <p className='text-zinc-600 leading-[1.7rem]'>9</p>
+                    <p className='text-zinc-600 leading-[1.7rem]'>10</p>
+                    <p className='text-zinc-600 leading-[1.7rem]'>11</p>
+                </div>
+                <div className='max-w-full w-full text-wrap overflow-x-auto'>
+                    {project?.overview.split('.').map((sentence, index) => (
+                        sentence.trim() && (
+                            <p key={index} className='text-white leading-[1.7rem]'>
+                                {sentence.trim() + '.'}
+                            </p>
+                        )
+                    ))}
+                </div>
             </div>
         </div>
     )

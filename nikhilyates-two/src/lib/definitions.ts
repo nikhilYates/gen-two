@@ -22,3 +22,15 @@ export type NavigationContentType = {
     photoUrl: string,
     link: string
 }
+
+export type ProjectType = {
+    id: number,
+    name: string,
+    filename: string,
+    category: string,
+    overview: string,
+    skills: string[],
+    date: string,
+    link: string,
+    mediaUrl: string
+}
