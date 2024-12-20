@@ -26,7 +26,7 @@ import {
     AccordionTrigger,
   } from "@/components/ui/accordion"
 import InfoContainer from './components/leftMain/LeftMain'
-import MediaContainer from './components/rightMain/page'
+import MediaContainer from './components/rightMain/RightMain'
 import BottomContainer from './components/bottom/BottomContainer'
 import projects from '../../../data/projects.json'
 import { ProjectType } from '@/lib/definitions'
