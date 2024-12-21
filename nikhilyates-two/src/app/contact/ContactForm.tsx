@@ -45,7 +45,7 @@ export function ContactForm() {
 
     return (
         <div id='contact' className='bg-zinc-950 h-auto w-screen p-16 pt-24 flex flex-col gap-0 lg:gap-8'>
-            <div className='w-full flex flex-col gap-3'>
+            <div className='w-full flex flex-row justify-center'>
                 <h1 className='scroll-m-20 text-6xl font-extralight tracking-tight 2xl:text-8xl text-white/20'>contact</h1>
             </div>
             <div className="w-full flex flex-row justify-center">

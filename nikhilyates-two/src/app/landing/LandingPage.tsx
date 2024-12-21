@@ -9,6 +9,7 @@ import instagramWhite from '../../../public/assets/svgs/instagramWhite.svg';
 import githubWhite from '../../../public/assets/svgs/githubWhite.svg';
 import nyWhite from '../../../public/assets/svgs/nyWhite.svg';
 import arrowTurnDownLeft from '../../../public/assets/svgs/hero/ArrowTurnDownLeft.svg';
+import landingBg from '../../../public/assets/images/landing_bg.svg';
 
 
 
@@ -19,7 +20,16 @@ const LandingPage = () => {
   };
 
   return (
-    <div id='home' className='bg-zinc-950 h-screen p-8 lg:p-16'>
+    <div 
+      id='home' 
+      className='bg-zinc-950 min-h-screen h-auto p-8 lg:p-16 relative'
+      style={{
+        backgroundImage: `url(${landingBg.src})`,
+        backgroundSize: 'contain',
+        backgroundPosition: 'top left',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
       <div className='w-full h-full flex flex-col gap-4 lg:gap-0'>
         <div className='h-full w-full flex flex-col justify-top'>
           <div className='flex flex-row justify-between'>
@@ -28,10 +38,11 @@ const LandingPage = () => {
             </div>
             <div className='flex flex-row justify-end gap-4 '>
               <a href="https://github.com/nikhilyates" target="_blank" rel="noopener noreferrer">
-                <Image priority src={githubWhite} alt='github logo' className='h-6 w-6 cursor-pointer hover:opacity-70 transition-opacity'/>
+                <Image priority src={githubWhite} alt='github logo' className='h-5 w-5 cursor-pointer opacity-60 hover:opacity-100 transition-opacity'/>
               </a>
-              <Image priority src={linkedinWhite} alt='linkedin logo' className='h-6 w-6'/>
-              <Image priority src={instagramWhite} alt='linkedin logo' className='h-6 w-6'/>
+              <a href="https://www.linkedin.com/in/nikhilyates/" target="_blank" rel="noopener noreferrer">
+                <Image priority src={linkedinWhite} alt='linkedin logo' className='h-5 w-5 cursor-pointer opacity-60 hover:opacity-100 transition-opacity'/>
+              </a>
             </div>
           </div>
           
