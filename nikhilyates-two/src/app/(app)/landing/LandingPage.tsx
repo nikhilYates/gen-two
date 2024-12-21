@@ -1,15 +1,13 @@
 'use client'
 
 import React from 'react'
-import contents from '../../../data/contents.json';
+import contents from '../../../../data/contents.json';
 import NavCard from './components/NavCard';
 import Image from 'next/image';
-import linkedinWhite from '../../../public/assets/svgs/linkedinWhite.svg';
-import instagramWhite from '../../../public/assets/svgs/instagramWhite.svg';
-import githubWhite from '../../../public/assets/svgs/githubWhite.svg';
-import nyWhite from '../../../public/assets/svgs/nyWhite.svg';
-import arrowTurnDownLeft from '../../../public/assets/svgs/hero/ArrowTurnDownLeft.svg';
-import landingBg from '../../../public/assets/images/landing_bg.svg';
+import linkedinWhite from '../../../../public/assets/svgs/linkedinWhite.svg';
+import githubWhite from '../../../../public/assets/svgs/githubWhite.svg';
+import nyWhite from '../../../../public/assets/svgs/nyWhite.svg';
+import landingBg from '../../../../public/assets/images/landing_bg.svg';
 
 
 

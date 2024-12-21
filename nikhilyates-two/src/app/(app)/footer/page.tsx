@@ -1,14 +1,13 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import { handleScroll } from '@/app/utils/Scroll'
-import contents from '../../../data/contents.json'
+import { handleScroll } from '@/app/(app)/utils/Scroll'
+import contents from '../../../../data/contents.json'
 import { Separator } from '@/components/ui/separator'
 
-import nikhilYates from '../../../public/assets/images/footer_background.svg'
-import linkedinWhite from '../../../public/assets/svgs/linkedinWhite.svg';
-import instagramWhite from '../../../public/assets/svgs/instagramWhite.svg';
-import githubWhite from '../../../public/assets/svgs/githubWhite.svg';
+import nikhilYates from '../../../../public/assets/images/footer_background.svg'
+import linkedinWhite from '../../../../public/assets/svgs/linkedinWhite.svg';
+import githubWhite from '../../../../public/assets/svgs/githubWhite.svg';
 
 
 const Footer = () => {

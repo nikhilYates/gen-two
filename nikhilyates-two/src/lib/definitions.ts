@@ -34,3 +34,24 @@ export type ProjectType = {
     link: string,
     mediaUrl: string
 }
+
+export type Database = {
+    public: {
+        Tables: {
+            contact_information: {
+                Row: {
+                    id: number,
+                    name: string,
+                    email: string,
+                    message: string
+                }
+                Insert: {
+                    id: number,
+                    name: string,
+                    email: string,
+                    message: string
+                }
+            }
+        }
+    }
+}

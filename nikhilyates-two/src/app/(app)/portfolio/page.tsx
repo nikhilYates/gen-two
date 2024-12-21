@@ -17,15 +17,15 @@ import {
 import InfoContainer from './components/leftMain/LeftMain'
 import MediaContainer from './components/rightMain/RightMain'
 import BottomContainer from './components/bottom/BottomContainer'
-import projects from '../../../data/projects.json'
+import projects from '../../../../data/projects.json'
 import { ProjectType } from '@/lib/definitions'
   
 
-import file from '../../../public/assets/svgs/hero/File.svg'
-import music from '../../../public/assets/svgs/hero/Music.svg'
-import locked from '../../../public/assets/svgs/hero/Locked.svg'
-import play from '../../../public/assets/svgs/hero/Play.svg'
-import paper from '../../../public/assets/svgs/hero/Paper.svg'
+import file from '../../../../public/assets/svgs/hero/File.svg'
+import music from '../../../../public/assets/svgs/hero/Music.svg'
+import locked from '../../../../public/assets/svgs/hero/Locked.svg'
+import play from '../../../../public/assets/svgs/hero/Play.svg'
+import paper from '../../../../public/assets/svgs/hero/Paper.svg'
 
 
 

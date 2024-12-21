@@ -1,8 +1,7 @@
-import react from 'react'
 import Image from 'next/image'
 import { ProjectType } from '@/lib/definitions'
 import { Badge } from '@/components/ui/badge'
-import arrowDownLeft from '../../../../../public/assets/svgs/hero/ArrowDownLeft.svg';
+import arrowDownLeft from '../../../../../../public/assets/svgs/hero/ArrowDownLeft.svg';
 
 type BottomContainerProps = {
     project: ProjectType | null;

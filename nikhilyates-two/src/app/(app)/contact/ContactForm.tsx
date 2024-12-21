@@ -14,8 +14,9 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import arrowTurnDownLeft from '../../../public/assets/svgs/hero/ArrowTurnDownLeft.svg';
+import arrowTurnDownLeft from '../../../../public/assets/svgs/hero/ArrowTurnDownLeft.svg';
 import Image from 'next/image';
+import { useState } from "react"
 
 
 const formSchema = z.object({
@@ -33,14 +34,50 @@ const formSchema = z.object({
 });
 
 export function ContactForm() {
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const [submitStatus, setSubmitStatus] = useState<{
+        type: 'success' | 'error' | null;
+        message: string;
+    }>({ type: null, message: '' });
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
+            name: "",
+            email: "",
+            message: ""
         }
     })
 
-    function onSubmit(values: z.infer<typeof formSchema>) {
+    async function onSubmit(values: z.infer<typeof formSchema>) {
+        try {
+            setIsSubmitting(true)
+            setSubmitStatus({ type: null, message: '' });
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(values)
+            })
 
+            if (!response.ok) {
+                throw new Error('Failed to submit form')
+            }
+
+            form.reset()
+            setSubmitStatus({
+                type: 'success',
+                message: 'Message sent successfully!'
+            });
+        } catch (error) {
+            console.error('Error submitting form:', error)
+            setSubmitStatus({
+                type: 'error',
+                message: 'Failed to send message. Please try again.'
+            });
+        } finally {
+            setIsSubmitting(false)
+        }
     }
 
     return (
@@ -53,7 +90,6 @@ export function ContactForm() {
                     <Form {...form}>
                         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                             <div className="rounded-2xl pt-8 flex flex-col gap-2 2xl:gap-4">
-                                
                                 <FormField
                                     control={form.control}
                                     name="name"
@@ -115,17 +151,24 @@ export function ContactForm() {
                                                 />
                                             </FormControl>
                                             <FormDescription>
-                                                i'll report you to csis/cia if you spam me i swear
+                                                csis/cia is watching you
                                             </FormDescription>
                                             <FormMessage />
                                         </FormItem>
                                     )}
                                 />
-                                <div className='w-full flex flex-row justify-center gap-4'>
-                                    <Button type="submit" variant={'secondary'}>
-                                        <b>Submit</b>
+                                <div className='w-full flex flex-col items-center gap-4'>
+                                    <Button type="submit" variant={'secondary'} disabled={isSubmitting}>
+                                        <b>{isSubmitting ? 'Sending...' : 'Submit'}</b>
                                         <Image priority src={arrowTurnDownLeft} alt='arrow-turn-down-left' className='h-5 w-5'/>
                                     </Button>
+                                    {submitStatus.type && (
+                                        <p className={`text-sm ${
+                                            submitStatus.type === 'success' ? 'text-green-400' : 'text-red-400'
+                                        }`}>
+                                            {submitStatus.message}
+                                        </p>
+                                    )}
                                 </div>
                             </div>
                         </form>
