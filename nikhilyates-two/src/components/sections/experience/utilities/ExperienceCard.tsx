@@ -16,10 +16,10 @@ const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
         <Card className='bg-inherit w-full text-white border-zinc-600 rounded-2xl h-auto hover:border-zinc-300 transition-colors ease-in-out duration-500 flex flex-col'>
             <CardHeader className='flex flex-row justify-between'>
                 <div>
-                    <CardTitle className='font-bold text-2xl md:text-4xl'>
+                    <CardTitle className='font-bold text-2xl md:text-3xl'>
                     {experience.title ?? 'Job Title'}
                     </CardTitle>
-                    <CardDescription className='mt-1 text-2xl md:text-4xl font-light'>
+                    <CardDescription className='mt-1 text-2xl md:text-3xl font-light'>
                         {experience.company ?? 'Company Name'}
                     </CardDescription>
                 </div>
@@ -29,7 +29,7 @@ const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
             </CardHeader>
             <CardContent className='flex-grow'>
                 <div className='flex flex-col h-full'>
-                    <div className='flex flex-col lg:flex-row justify-between gap-2 flex-grow'>
+                    <div className='flex flex-col 2xl:flex-row justify-between gap-2 flex-grow'>
                         <div className='w-full lg:w-full flex flex-col justify-start'>
                             <h3 className='mb-2 scroll-m-20 text-2xl font-medium tracking-tight'>overview</h3>
                             <p className='leading-7 [&:not(:first-child)] text-white'>

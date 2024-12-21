@@ -3,35 +3,35 @@
         "id": 1,
         "title": "about",
         "description": "my work, my passions, my inspirat- just kidding. just some stuff about me",
-        "photoUrl": "assets/images/navCards/about.jpeg",
+        "photoUrl": "assets/images/navCards/about.webp",
         "link": "about"
     },
     {
         "id": 2,
         "title": "experience",
         "description": "you and i are not the same",
-        "photoUrl": "assets/images/navCards/experience.jpg",
+        "photoUrl": "assets/images/navCards/experience.webp",
         "link": "experience"
     },
     {
         "id": 3,
         "title": "portfolio",
         "description": "showcase of what i can do. no, you probably can't do what i've done.",
-        "photoUrl": "assets/images/navCards/portfolio.jpg",
+        "photoUrl": "assets/images/navCards/portfolio.webp",
         "link": "portfolio"
     },
     {
         "id": 4,
         "title": "contact",
         "description": "i know, i know - you're begging to hire me",
-        "photoUrl": "assets/images/navCards/contact.jpg",
+        "photoUrl": "assets/images/navCards/contact.webp",
         "link": "contact"
     },
     {
         "id": 5,
         "title": "scorpionlabz",
         "description": "what does it mean to build a business?",
-        "photoUrl": "assets/images/navCards/sl.png",
+        "photoUrl": "assets/images/navCards/sl.webp",
         "link": ""
     }
 ]

@@ -1,18 +1,7 @@
 "use client"
 
-import react, { useState } from 'react';
+import { useState } from 'react';
 import Image from 'next/image'
-import { Button } from "@/components/ui/button"
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-} from "@/components/ui/card"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import {
     Tabs,
     TabsContent,
@@ -33,7 +22,6 @@ import { ProjectType } from '@/lib/definitions'
   
 
 import file from '../../../public/assets/svgs/hero/File.svg'
-import search from '../../../public/assets/svgs/hero/Search.svg'
 import music from '../../../public/assets/svgs/hero/Music.svg'
 import locked from '../../../public/assets/svgs/hero/Locked.svg'
 import play from '../../../public/assets/svgs/hero/Play.svg'
@@ -72,12 +60,12 @@ const Portfolio = () => {
     }
 
     return (
-        <div id='portfolio' className='bg-zinc-950 h-screen w-screen p-16 flex flex-col gap-8'>
+        <div id='portfolio' className='bg-zinc-950 min-h-screen h-screen w-screen p-16 flex flex-col gap-8'>
             <div className='w-full flex flex-col gap-3'>
-                <h1 className='scroll-m-20 text-4xl font-extralight tracking-tight lg:text-8xl text-white'>portfolio</h1>
+                <h1 className='scroll-m-20 text-6xl font-extralight tracking-tight 2xl:text-8xl text-white/20'>portfolio</h1>
             </div>
-            <div className='h-full w-full border border-zinc-500 rounded-lg p-4 pl-0 flex flex-row justify-between gap-4'>
-                <div className='h-full w-[15%] flex flex-col justify-start gap-4 border-r border-zinc-500'>
+            <div className='flex-1 w-full border border-zinc-500 rounded-lg p-4 pl-0 flex flex-row justify-between gap-4'>
+                <div className='h-full w-[25%] 2xl:w-[15%] flex flex-col justify-start gap-4 border-r border-zinc-500'>
                     <div>
                         <Tabs defaultValue="files" className="w-full">
                             <TabsList className="grid w-full pl-4 grid-cols-3 bg-zinc-950 text-white rounded-none">
@@ -113,15 +101,15 @@ const Portfolio = () => {
                     should be converted into its own component
                  */}
                 <div className='h-full w-full flex flex-col gap-4'>
-                    <div className='w-full flex flex-row gap-4 h-[75%]'>
-                        <div className='w-[40%] border rounded-lg border-zinc-800'>
+                    <div className='w-full flex flex-row gap-4 h-[75%] min-h-0'>
+                        <div className='w-[40%] h-full border rounded-lg border-zinc-800'>
                             <InfoContainer project={selectedProject}/>
                         </div>
                         <div className='w-[60%] border rounded-lg border-zinc-800 overflow-hidden'>
                             <MediaContainer project={selectedProject}/>  
                         </div>
                     </div>
-                    <div className='w-full border border-zinc-800 rounded-lg h-[25%]'>
+                    <div className='w-full border border-zinc-800 rounded-lg h-[25%] min-h-0'>
                             <BottomContainer project={selectedProject} />
                     </div>
                 </div>

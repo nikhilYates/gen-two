@@ -44,15 +44,15 @@ export function ContactForm() {
     }
 
     return (
-        <div id='contact' className='bg-zinc-950 h-auto w-screen p-16 flex flex-col gap-0 lg:gap-8'>
+        <div id='contact' className='bg-zinc-950 h-auto w-screen p-16 pt-24 flex flex-col gap-0 lg:gap-8'>
             <div className='w-full flex flex-col gap-3'>
-                <h1 className='scroll-m-20 text-4xl font-extralight tracking-tight lg:text-8xl text-white'>contact</h1>
+                <h1 className='scroll-m-20 text-6xl font-extralight tracking-tight 2xl:text-8xl text-white/20'>contact</h1>
             </div>
             <div className="w-full flex flex-row justify-center">
-                <div className="w-full xl:w-[50%]">
+                <div className="w-full lg:w-[75%] 2xl:w-[50%]">
                     <Form {...form}>
                         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-                            <div className="rounded-2xl pt-8 flex flex-col gap-4">
+                            <div className="rounded-2xl pt-8 flex flex-col gap-2 2xl:gap-4">
                                 
                                 <FormField
                                     control={form.control}

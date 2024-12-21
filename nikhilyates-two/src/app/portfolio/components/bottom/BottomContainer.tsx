@@ -13,7 +13,7 @@ const BottomContainer: React.FC<BottomContainerProps> = ({ project }) => {
     return (
         <div className='p-4 w-full h-full flex flex-col justify-between'>
             <div className='flex flex-col justify-start gap-4'>
-                <h1 className='text-white/50 text-2xl'>skills</h1>
+                <h1 className='text-white/50 text-xl 2xl:text-2xl'>technical</h1>
                 <div className="flex flex-wrap gap-2">
                     {project?.skills.map((skill, index) => (
                         <Badge key={index} variant="secondary" className="text-black">
