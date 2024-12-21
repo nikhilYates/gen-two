@@ -14,8 +14,8 @@
             "simulation"
         ],
         "date": "November 2023",
-        "link": "",
-        "mediaUrl": "assets/images/projects/preview_llm.png"
+        "link": "https://github.com/nikhilYates/RRT-Path-Finding-Algorithm",
+        "mediaUrl": "assets/video/RRT-speeeed.mp4"
     },
     {
         "id": 2,
@@ -32,7 +32,7 @@
             "comparative analysis"
         ],
         "date": "December 2023",
-        "link": "",
+        "link": "https://github.com/nikhilYates/LLM-based-testcase-generation/tree/main",
         "mediaUrl": "assets/images/projects/preview_llm.png"
     },
     {
@@ -48,7 +48,7 @@
             "P2P servers"
         ],
         "date": "June 2022",
-        "link": "",
-        "mediaUrl": "assets/images/projects/preview_llm.png"
+        "link": "https://github.com/nikhilYates/mbagz-chain",
+        "mediaUrl": ""
     }
 ]

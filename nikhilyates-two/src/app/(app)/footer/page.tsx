@@ -12,8 +12,6 @@ import githubWhite from '../../../../public/assets/svgs/githubWhite.svg';
 
 const Footer = () => {
 
-    
-
     return (
         <div 
             className="h-[90vh] lg:h-[70vh] w-full flex flex-col justify-between relative bg-zinc-950 p-8 lg:p-16"
@@ -31,7 +29,7 @@ const Footer = () => {
                         content.link && (
                             <a 
                                 key={content.id}
-                                onClick={() => handleScroll(content.link)}
+                                onClick={() => content?.title?.toLowerCase() === 'scorpionlabz' ? window.open(content.link, '_blank') : handleScroll(content.link)}
                                 className='text-white/80 hover:text-white transition-colors text-lg cursor-pointer'
                             >
                                 {content.title}
