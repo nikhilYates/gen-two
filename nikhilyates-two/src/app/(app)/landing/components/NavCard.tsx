@@ -6,11 +6,18 @@ import experience from '../../../../public/assets/images/navCards/experience.jpg
 interface NavCardProps {
     content: NavigationContentType,
     onNavigate: (link: string) => void;
-    
 }
 
 
 const NavCard = ({ content, onNavigate }: NavCardProps) => {
+  const handleClick = () => {
+    if (content.title.toLowerCase() === 'scorpionlabz') {
+      window.open(content.link, '_blank');
+    } else {
+      onNavigate(content.link);
+    }
+  };
+
   return (
     <div 
         key={content.id} 
@@ -21,7 +28,7 @@ const NavCard = ({ content, onNavigate }: NavCardProps) => {
             backgroundSize: 'cover', 
             backgroundPosition: 'left' 
         }}
-        onClick={() => onNavigate(content.link)}
+        onClick={handleClick}
     >
         <div className='transform whitespace-nowrap text-left p-4'>
             <h3 className="text-6xl font-semibold tracking-tight text-white">{content.title}</h3>
