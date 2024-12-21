@@ -16,6 +16,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "nikhil yates",
   description: "the next generation",
+  icons: {
+    icon: '/assets/svgs/nyWhite.svg'
+  },
 };
 
 export default function RootLayout({

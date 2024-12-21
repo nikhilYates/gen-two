@@ -4,6 +4,7 @@ import About from "@/app/(app)/about/page";
 import { ContactForm } from "@/app/(app)/contact/ContactForm"
 import Portfolio from "@/app/(app)/portfolio/page"
 import Footer from "@/app/(app)/footer/page"
+import Head from "next/head"
 
 export default function Home() {
   return (
