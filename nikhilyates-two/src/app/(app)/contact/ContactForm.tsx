@@ -146,7 +146,7 @@ export function ContactForm() {
                                                 <Textarea 
                                                     placeholder="what do you want to chat about?" 
                                                     id='message-2'
-                                                    className="bg-zinc-950 min-h-[20rem] placeholder:text-gray-400 border border-gray-400 text-zinc-100"
+                                                    className="bg-zinc-950 min-h-[15rem] placeholder:text-gray-400 border border-gray-400 text-zinc-100"
                                                     {...field}
                                                 />
                                             </FormControl>
