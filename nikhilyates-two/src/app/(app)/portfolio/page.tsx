@@ -31,9 +31,7 @@ import paper from '../../../../public/assets/svgs/hero/Paper.svg'
 
 const Portfolio = () => {
 
-
-    const [selectedProject, setSelectedProject] = useState<ProjectType | null>(null);
-
+    const [selectedProject, setSelectedProject] = useState<ProjectType | null>(projects[0]);
 
     const projectsByCategory = projects.reduce((acc: { [key: string]: any[] }, project) => {
         const category = project.category;
