@@ -46,7 +46,7 @@ const Footer = () => {
                             <Image priority src={linkedinWhite} alt='linkedin logo' className='h-5 w-5 cursor-pointer opacity-60 hover:opacity-100 transition-opacity'/>
                         </a>
                     </div>
-                    <p className='text-zinc-600 hover:text-white transition-colors text-lg'>nikhil yates © 2024</p>
+                    <p className='text-zinc-600 transition-colors text-lg'>nikhil yates © 2024</p>
                 </div>
             </div>
         </div>
