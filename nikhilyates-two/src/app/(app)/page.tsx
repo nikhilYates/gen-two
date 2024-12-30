@@ -8,7 +8,7 @@ import Head from "next/head"
 
 export default function Home() {
   return (
-    <div className="w-100vw overflow-hidden [&::-webkit-scrollbar]:bg-black [&::-webkit-scrollbar-thumb]:bg-black">
+    <div className="w-100vw overflow-hidden [&::-webkit-scrollbar]:bg-black [&::-webkit-scrollbar-thumb]:bg-black selection:bg-white">
       <LandingPage />
       <About />
       <Experience />

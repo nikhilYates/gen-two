@@ -19,7 +19,7 @@ const About = () => {
                 <span className='text-white'> Web3, generative AI, data interactivity, robotics, and user experience design</span>.
             </h1>
             <h1 className='scroll-m-20 text-6xl font-extrabold tracking-tight 2xl:text-8xl text-zinc-500 leading-[4rem]'>
-                <span className='text-white'>TLDR::</span> i like <span className='text-white'>stuff(building + designing + learning)</span>
+                <span className='text-white'>TLDR:</span> i like <span className='text-white'>stuff(building + designing + learning)</span>
             </h1>
             <h1 className='scroll-m-20 text-6xl font-extrabold tracking-tight 2xl:text-8xl text-zinc-500 leading-[4rem]'>
                 want to collaborate? let's <span onClick={() => handleScroll('contact')} className='underline text-white cursor-pointer'>connect</span>.
