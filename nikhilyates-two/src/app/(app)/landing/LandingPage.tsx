@@ -48,7 +48,7 @@ const LandingPage = () => {
         {/* smart navigation divs */}
         <div className='lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:w-auto flex flex-col justify-center'>
           <div className='flex flex-col justify-center'>
-            <div className='flex max-w-max flex-col md:flex-row justify-center gap-1'>
+            <div className='flex w-full flex-col md:flex-row justify-center gap-1'>
               {contents.map((content) => (
                 <NavCard 
                   key={content.id} 

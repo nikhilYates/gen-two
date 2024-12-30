@@ -14,7 +14,7 @@ const ExperienceCardLarge = ({ experience }: ExperienceCardProps ) => {
 
     return (
         <Card className='bg-inherit w-full text-white border-zinc-600 rounded-2xl h-auto hover:border-zinc-300 transition-colors ease-in-out duration-500 flex flex-col'>
-            <CardHeader className='flex flex-row justify-between'>
+            <CardHeader className='flex flex-col justify-start gap-2 md:flex-row md:justify-between md:gap-0'>
                 <div>
                     <CardTitle className='font-bold text-2xl md:text-3xl'>
                     {experience.title ?? 'Job Title'}
