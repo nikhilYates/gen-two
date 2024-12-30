@@ -58,7 +58,7 @@ const Portfolio = () => {
     }
 
     return (
-        <div id='portfolio' className='bg-zinc-950 min-h-screen h-screen w-screen p-16 flex flex-col gap-8'>
+        <div id='portfolio' className='bg-zinc-950 h-screen max-h-screen w-screen p-16 flex flex-col gap-8'>
             <div className='w-full flex flex-col gap-3'>
                 <h1 className='scroll-m-20 text-6xl font-extralight tracking-tight 2xl:text-8xl text-white/20'>portfolio</h1>
             </div>
