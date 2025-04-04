@@ -106,7 +106,7 @@ export function ContactForm() {
                                                 />
                                             </FormControl>
                                             <FormDescription>
-                                                why would you even want to enter an alias
+                                                no alias
                                             </FormDescription>
                                             <FormMessage />
                                         </FormItem>
@@ -129,7 +129,7 @@ export function ContactForm() {
                                                 />
                                             </FormControl>
                                             <FormDescription>
-                                                a real one so i can get back to you if i feel like it
+                                                a real one
                                             </FormDescription>
                                             <FormMessage />
                                         </FormItem>
@@ -151,7 +151,7 @@ export function ContactForm() {
                                                 />
                                             </FormControl>
                                             <FormDescription>
-                                                csis/cia is watching you
+                                                csis/cia is watching
                                             </FormDescription>
                                             <FormMessage />
                                         </FormItem>

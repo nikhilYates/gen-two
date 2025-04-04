@@ -21,7 +21,7 @@ const NavCard = ({ content, onNavigate }: NavCardProps) => {
   return (
     <div 
         key={content.id} 
-        className='w-full opacity-70 rounded-2xl md:max-w-full lg:w-[12rem] lg:h-[22rem] h-[8rem] overflow-hidden flex flex-col items-start justify-end 
+        className='w-full opacity-70 rounded-2xl md:max-w-full lg:w-[10rem] lg:h-[20rem] h-[8rem] overflow-hidden flex flex-col items-start justify-end 
         border-[0.25rem] border-gray-400 cursor-pointer transition-all duration-1000 md:hover:w-[24rem] md:hover:opacity-100'
         style={{ 
             backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${content.photoUrl})`, 
