@@ -31,7 +31,7 @@ const ExperienceCardSmall = ({ experience }: ExperienceCardProps ) => {
         <CardContent className='flex-grow'>
             <div className='flex flex-col justify-between gap-4 h-full'>
                 <div className='w-full flex flex-row justify-center'>
-                    <div className='w-[60%] 2xl:w-[90%]'>
+                    <div className='w-[100%] 2xl:w-[90%]'>
                         <ExperienceGraph chartData={experience.chartData!} chartColor={experience.id}/>
                     </div>
                 </div>

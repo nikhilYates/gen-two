@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import contents from '../../../../data/contents.json';
 import NavCard from './components/NavCard';
 import Image from 'next/image';
@@ -8,10 +8,21 @@ import linkedinWhite from '../../../../public/assets/svgs/linkedinWhite.svg';
 import githubWhite from '../../../../public/assets/svgs/githubWhite.svg';
 import nyWhite from '../../../../public/assets/svgs/nyWhite.svg';
 import landingBg from '../../../../public/assets/images/landing_bg.svg';
-
-
+import mobileLandingBg from '../../../../public/assets/images/landing_bg_vertical.svg';
 
 const LandingPage = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth < 768); // Using 768px as the breakpoint for mobile
+    };
+
+    checkScreenSize();
+    window.addEventListener('resize', checkScreenSize);
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
   const handleScroll = (link: string) => {
     const element = document.getElementById(link);
     element?.scrollIntoView({ behavior: 'smooth' });
@@ -20,10 +31,10 @@ const LandingPage = () => {
   return (
     <div 
       id='home' 
-      className='bg-zinc-950 min-h-screen h-auto p-8 lg:p-16 relative'
+      className='bg-zinc-950 h-screen h-auto p-8 lg:p-16 relative'
       style={{
-        backgroundImage: `url(${landingBg.src})`,
-        backgroundSize: 'contain',
+        backgroundImage: `url(${isMobile ? mobileLandingBg.src : landingBg.src})`,
+        backgroundSize: `${isMobile ? 'cover' : 'contain'}`,
         backgroundPosition: 'top left',
         backgroundRepeat: 'no-repeat'
       }}
@@ -54,6 +65,7 @@ const LandingPage = () => {
                   key={content.id} 
                   content={content} 
                   onNavigate={handleScroll}
+                  isMobile={isMobile}
                 />
               ))}
             </div>

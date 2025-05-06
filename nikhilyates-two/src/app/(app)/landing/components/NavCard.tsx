@@ -6,10 +6,11 @@ import experience from '../../../../public/assets/images/navCards/experience.jpg
 interface NavCardProps {
     content: NavigationContentType,
     onNavigate: (link: string) => void;
+    isMobile: boolean;
 }
 
 
-const NavCard = ({ content, onNavigate }: NavCardProps) => {
+const NavCard = ({ content, onNavigate, isMobile }: NavCardProps) => {
   const handleClick = () => {
     if (content.title.toLowerCase() === 'scorpionlabz') {
       window.open(content.link, '_blank');
@@ -30,8 +31,8 @@ const NavCard = ({ content, onNavigate }: NavCardProps) => {
         }}
         onClick={handleClick}
     >
-        <div className='transform whitespace-nowrap text-left p-4'>
-            <h3 className="text-4xl md:text-6xl font-semibold tracking-tight text-white">{content.title}</h3>
+        <div className='transform whitespace-nowrap p-0 text-left lg:p-4'>
+            <h3 className={`text-9xl md:text-6xl font-semibold tracking-tight text-white/30 lg:text-white/40 ${isMobile && content.id === 3 ? 'line-through' : ''}`}>{content.title}</h3>
         </div>
         <div className='inset-0 p-4 text-white text-center w-full h-full hidden md:hover:block'>
             {content.description}
