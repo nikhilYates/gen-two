@@ -31,7 +31,7 @@ const LandingPage = () => {
   return (
     <div 
       id='home' 
-      className='bg-zinc-950 h-screen h-auto p-8 lg:p-16 relative'
+      className='bg-zinc-950 min-h-screen h-auto p-8 lg:p-16 relative'
       style={{
         backgroundImage: `url(${isMobile ? mobileLandingBg.src : landingBg.src})`,
         backgroundSize: `${isMobile ? 'cover' : 'contain'}`,
@@ -54,10 +54,9 @@ const LandingPage = () => {
               </a>
             </div>
           </div>
-          
         </div>
         {/* smart navigation divs */}
-        <div className='lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 lg:w-auto flex flex-col justify-center'>
+        <div className={`${isMobile ? 'mt-8' : 'lg:absolute lg:top-1/2 lg:left-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2'} lg:w-auto flex flex-col justify-center`}>
           <div className='flex flex-col justify-center'>
             <div className='flex w-full flex-col md:flex-row justify-center gap-1'>
               {contents.map((content) => (
@@ -71,9 +70,8 @@ const LandingPage = () => {
             </div>
           </div>
         </div>
-        </div>
-
       </div>
+    </div>
   )
 }
 

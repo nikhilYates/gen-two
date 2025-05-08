@@ -49,14 +49,22 @@ export function ExperienceGraph({ chartData, chartColor }: Props) {
   }, [chartColor]);
 
   return (
-    <Card className="bg-inherit text-white border-0">
-      <CardContent className="pb-0">
+    <Card className="bg-inherit text-white h-full w-full border-0">
+      <CardContent className="pb-0 h-full w-full">
         <ChartContainer
           config={config}
-          className="mx-auto aspect-square"
+          className="aspect-square"
         >
-          <RadarChart data={chartData}>
-            <PolarAngleAxis dataKey="label" stroke="#ffffff" />
+          <RadarChart 
+            data={chartData}
+            outerRadius="70%"
+            margin={{ top: 20, right: 20, bottom: 20, left: 20 }}
+          >
+            <PolarAngleAxis 
+              dataKey="label" 
+              stroke="#ffffff"
+              tick={{ fontSize: 12 }}
+            />
             <PolarGrid radialLines={false} stroke="#4b5563" />
             <Radar
               dataKey="desktop"
