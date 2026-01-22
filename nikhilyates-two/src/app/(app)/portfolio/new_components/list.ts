@@ -1,0 +1,177 @@
+import type { Project } from "../types/portfolioTypes";
+
+interface ListProjectsResponse {
+  projects: Project[];
+}
+
+// Returns all portfolio projects.
+export const getProjects = async (): Promise<ListProjectsResponse> => {
+  const projects = [
+    {
+      id: "1",
+      title: "E-Commerce Platform",
+      description: "A modern e-commerce platform with real-time inventory management and payment processing.",
+      category: "saas-and-web" as const,
+      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
+      imageUrl: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
+      filename: "ecommerce-platform",
+      date: "2024-01-15",
+      link: "https://example.com/ecommerce",
+      mediaUrl: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=600&fit=crop&crop=center",
+      hotspots: [
+        {
+          id: "h1",
+          position: { x: 75, y: 25 },
+          title: "Payment System",
+          description: "Secure payment processing",
+          details: "Integrated Stripe payment gateway with support for multiple currencies and payment methods including credit cards, Apple Pay, and Google Pay.",
+          type: "feature" as const,
+        },
+        {
+          id: "h2",
+          position: { x: 25, y: 60 },
+          title: "Inventory Management",
+          description: "Real-time stock tracking",
+          details: "Advanced inventory management system with real-time stock updates, low stock alerts, and automated reordering capabilities.",
+          type: "feature" as const,
+        },
+        {
+          id: "h3",
+          position: { x: 50, y: 15 },
+          title: "React Frontend",
+          description: "Modern UI framework",
+          details: "Built with React 18, TypeScript, and Tailwind CSS for a responsive and performant user interface with server-side rendering.",
+          type: "tech" as const,
+        },
+      ],
+      createdAt: new Date("2024-01-15"),
+    },
+    {
+      id: "2",
+      title: "Mobile Fitness App",
+      description: "A comprehensive fitness tracking app with workout plans and social features.",
+      category: "saas-and-web" as const,
+      technologies: ["React Native", "Firebase", "Redux", "Chart.js"],
+      imageUrl: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center",
+      filename: "fitness-app",
+      date: "2024-02-20",
+      link: "https://example.com/fitness",
+      mediaUrl: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=600&fit=crop&crop=center",
+      hotspots: [
+        {
+          id: "h4",
+          position: { x: 30, y: 40 },
+          title: "Workout Tracking",
+          description: "Comprehensive exercise logging",
+          details: "Track workouts with detailed exercise databases, progress photos, and performance analytics with charts and insights.",
+          type: "feature" as const,
+        },
+        {
+          id: "h5",
+          position: { x: 70, y: 30 },
+          title: "Social Features",
+          description: "Community engagement",
+          details: "Connect with friends, share achievements, join challenges, and participate in community leaderboards.",
+          type: "feature" as const,
+        },
+        {
+          id: "h6",
+          position: { x: 50, y: 70 },
+          title: "Firebase Backend",
+          description: "Cloud infrastructure",
+          details: "Powered by Firebase for real-time data sync, authentication, cloud storage, and push notifications.",
+          type: "tech" as const,
+        },
+      ],
+      createdAt: new Date("2024-02-20"),
+    },
+    {
+      id: "3",
+      title: "Data Visualization Dashboard",
+      description: "Interactive dashboard for business intelligence and data analytics.",
+      category: "artificial-intel" as const,
+      technologies: ["Vue.js", "D3.js", "Python", "FastAPI"],
+      imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
+      filename: "data-dashboard",
+      date: "2024-03-10",
+      link: "https://example.com/dashboard",
+      mediaUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop&crop=center",
+      hotspots: [
+        {
+          id: "h7",
+          position: { x: 60, y: 35 },
+          title: "Interactive Charts",
+          description: "Dynamic data visualization",
+          details: "Custom interactive charts built with D3.js featuring real-time updates, drill-down capabilities, and export functionality.",
+          type: "feature" as const,
+        },
+        {
+          id: "h8",
+          position: { x: 20, y: 65 },
+          title: "Python Analytics",
+          description: "Backend data processing",
+          details: "Powerful Python backend using FastAPI, Pandas, and NumPy for data processing, statistical analysis, and machine learning.",
+          type: "tech" as const,
+        },
+        {
+          id: "h9",
+          position: { x: 80, y: 60 },
+          title: "Real-time Updates",
+          description: "Live data streaming",
+          details: "WebSocket connections for real-time data updates with automatic chart refreshing and alert notifications.",
+          type: "feature" as const,
+        },
+      ],
+      createdAt: new Date("2024-03-10"),
+    },
+    {
+      id: "4",
+      title: "3D Game Engine",
+      description: "Custom 3D game engine with physics simulation and asset management.",
+      category: "game" as const,
+      technologies: ["C++", "OpenGL", "Bullet Physics", "Assimp"],
+      imageUrl: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=600&fit=crop&crop=center",
+      filename: "game-engine",
+      date: "2024-04-05",
+      link: "https://example.com/game-engine",
+      mediaUrl: "https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=600&fit=crop&crop=center",
+      hotspots: [
+        {
+          id: "h10",
+          position: { x: 65, y: 20 },
+          title: "Physics Engine",
+          description: "Realistic physics simulation",
+          details: "Integrated Bullet Physics for realistic collision detection, rigid body dynamics, and particle systems.",
+          type: "feature" as const,
+        },
+        {
+          id: "h11",
+          position: { x: 35, y: 25 },
+          title: "Rendering Pipeline",
+          description: "Advanced graphics rendering",
+          details: "Custom OpenGL rendering pipeline with deferred shading, shadow mapping, and post-processing effects.",
+          type: "tech" as const,
+        },
+        {
+          id: "h12",
+          position: { x: 75, y: 65 },
+          title: "Asset Management",
+          description: "Resource handling system",
+          details: "Efficient asset loading and management system supporting multiple file formats with memory optimization.",
+          type: "feature" as const,
+        },
+        {
+          id: "h13",
+          position: { x: 25, y: 70 },
+          title: "Scene Graph",
+          description: "Hierarchical scene organization",
+          details: "Optimized scene graph implementation for efficient culling, LOD management, and spatial organization.",
+          type: "tech" as const,
+        },
+      ],
+      createdAt: new Date("2024-04-05"),
+    },
+  ];
+
+  return { projects };
+};

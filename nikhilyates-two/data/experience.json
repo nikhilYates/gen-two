@@ -1,166 +1,204 @@
 [
   {
     "id": 1,
-    "title": "Full-Stack Engineer",
-    "company": "Conduit Venture Labs", 
-    "category": "Software Development",
+    "title": "Principal Engineer – Full Stack AI",
+    "company": "Conduit Venture Labs",
+    "category": "Software Engineering",
     "skills": [
       "TypeScript",
-      "Python", 
-      "HTML/CSS",
+      "Python",
       "PostgreSQL",
-      "Git",
-      "RESTful APIs",
+      "pgvector",
+      "REST APIs",
       "LLMs",
-      "Langchain"
+      "RAG",
+      "Semantic Search",
+      "LangChain",
+      "LLM Evaluation",
+      "Structured Outputs",
+      "Metadata-aware Retrieval",
+      "Docker",
+      "CI/CD",
+      "Microservices"
     ],
     "tools": [
-      "VS Code",
-      "GitHub",
-      "Jira", 
+      "XCode",
+      "IMU Sensors",
+      "BLE Sensors",
+      "Azure",
       "Postman",
-      "MySQL",
-      "openAI"
+      "AWS (S3, EC2, Lambda)"
     ],
-    "description": "Develop, engineer, and consult for software/hardtech products across multiple portfolio companies. Help shape early-stage business models with key technical insights.",
+    "description": "Designed and productionized LLM-powered systems, turning proofs-of-concept into scalable, fault-tolerant deployments delivering immediate business value. Built domain-specific RAG pipelines (ingestion, recursive chunking, embeddings, vector similarity search, grounded generation) and semantic search / conversational interfaces for both structured and unstructured data. Established LLM testing & evaluation workflows and implemented cost-aware inference strategies for reliable production usage.",
     "achievements": [
-      "built a RAG system using vector embeddings and semantic search (~85% accuracy)",
-      "integrated the LLM tool as a 'chat-bot' in a mobile app", 
-      "developed an interactive knowledge graph interface spanning 200 scientific journals",
-      "contributed to successful delivery of 4 major product releases"
+      "Productionized LLM-powered generative AI systems with fault-tolerant architectures and graceful degradation",
+      "Built domain-specific RAG pipelines to improve accuracy and reduce hallucinations",
+      "Implemented metadata-aware retrieval, similarity tuning, contextual reranking, and prompt grounding",
+      "Established evaluation workflows (structured outputs, confidence scoring, LLMs-as-judge, human-in-the-loop review)",
+      "Reduced AI operating costs by 70–95% via cost-aware inference strategies and semantic drift detection",
+      "Shipped API-first AI microservices in Python and TypeScript using Docker + CI/CD"
     ],
-    "durationMonths": 0,
-    "startDate": "2024-07-08",
+    "projects": [
+      {
+        "title": "Agentic Research Orchestration System",
+        "tech": ["Azure Durable Functions", "OpenAI", "Llama 3.1", "Next.js", "Python FastAPI", "Supabase"],
+        "details": [
+          "Architected a deterministic orchestration system using Azure Durable Functions to manage multi-stage AI research workflows, implementing yield-based synchronous flow control and intelligent sub-orchestrator composition.",
+          "Engineered a hybrid multi-LLM architecture that delegates tasks between local Llama 3.1 inference and GPT-4o-mini; integrated a semantic drift detection system (using cosine similarity on 1536-dim vectors) that reduces compute costs by 70-95% on stable trends.",
+          "Built a Next.js chat interface featuring real-time WebSocket polling and dynamic visualization of structured research data, backed by a hybrid storage layer (Supabase for relational metadata, Azure Blob for RAG document storage)."
+        ]
+      },
+      {
+        "title": "IoT Biomechanics Analysis Platform & Wearable",
+        "tech": ["Embedded C", "BLE", "React Three Fiber", "Signal Processing", "RAG", "WebSocket"],
+        "details": [
+          "Prototyped a custom wearable by integrating multi-axis IMU sensors onto a compression sleeve; wrote low-level protocol handlers to parse quaternion, accelerometer, and gyroscope streams at 100Hz over BLE.",
+          "Developed a real-time visualization pipeline using React Three Fiber and WebSockets, applying sensor fusion algorithms to compute joint angles and correlate acceleration spikes with biomechanical events.",
+          "Implemented a context-aware RAG system using Supabase pgvector and custom reranking to ground live sensor data against medical research, utilizing strategic chunking and ACL-specific boosting for evidence-based analysis."
+        ]
+      },
+      {
+        "title": "Social Graph Mobile Architecture & Analytics Engine",
+        "tech": ["React Native (Expo)", "Supabase Edge Functions", "TanStack Query", "Deno", "Next.js", "PDFKit"],
+        "details": [
+          "Engineered an offline-first mobile architecture using TanStack Query and Supabase, implementing optimistic updates and a polymorphic UI adapter pattern that reduced code duplication by 60%.",
+          "Designed a serverless event architecture using Supabase Edge Functions (Deno) and Realtime subscriptions to handle high-volume push notifications, badge logic, and geofencing with minimal latency.",
+          "Built a companion Next.js analytics dashboard capable of aggregating complex relational data (user engagement, retention, meetup participation) and generating dynamic PDF reports via server-side API routes."
+        ]
+      }
+    ],
+    "responsibilities": [
+      "Design scalable AI system architectures and production deployment patterns",
+      "Build conversational AI and semantic search experiences for non-technical users",
+      "Create monitoring and evaluation loops to ensure reliability and maintain quality"
+    ],
+    "durationMonths": 18,
+    "startDate": "2024-07-01",
     "endDate": "Present",
-    "location": "remote",
-    "frequency": "fulltime",
+    "location": "Remote",
+    "frequency": "Full-time",
     "chartData": [
-      { "label": "Project Management", "desktop": 125},
-      { "label": "SaaS", "desktop": 200},
-      { "label": "Product", "desktop": 150},
-      { "label": "Software Design", "desktop": 175},
-      { "label": "Finance", "desktop": 100},
-      { "label": "AI/ML", "desktop": 150},
-      { "label": "Data", "desktop": 150}
+      { "label": "Project Management", "desktop": 140 },
+      { "label": "SaaS", "desktop": 170 },
+      { "label": "Product", "desktop": 170 },
+      { "label": "Software Design", "desktop": 190 },
+      { "label": "Finance", "desktop": 70 },
+      { "label": "AI/ML", "desktop": 200 },
+      { "label": "Data", "desktop": 185 }
     ]
   },
   {
     "id": 2,
-    "title": "Founder/Software Architect",
+    "title": "Full Stack Engineer",
     "company": "ScorpionLabz",
-    "category": "ScorpionLabz",
+    "category": "Software Engineering",
     "skills": [
-      "Software Design",
-      "Design",
-      "Next.js",
+      "React",
+      "Node.js",
+      "PostgreSQL",
       "AWS",
-      "PaaS",
-      "Consulting",
-      "Project Management"
+      "System Design",
+      "CI/CD",
+      "UX"
     ],
     "tools": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "GitHub",
+      "AWS (S3, EC2, Lambda)",
+      "PostgreSQL",
+      "Figma"
     ],
-    "description": "software solutions architecture firm specializing in SaaS products for startups and early stage companies.",
+    "description": "Built and deployed scalable web applications and AWS infrastructure with robust architectures and CI/CD. Led client-facing delivery through system design, UX improvements, and stakeholder collaboration, contributing to measurable e-commerce growth.",
     "achievements": [
-      "built, tested, and validated an accelerative, productized business model",
-      "product design led to a 100% increase in sales for e-commerce clients"
+      "Built and deployed scalable web apps (React, Node.js, PostgreSQL, AWS)",
+      "Contributed to a 100% increase in e-commerce sales via improved product and UX delivery",
+      "Designed CI/CD pipelines and optimized AWS infrastructure (S3, EC2, Lambda) for cost and reliability"
     ],
-    "durationMonths": 0,
-    "startDate": "2023-09-01",
-    "endDate": "Present",
+    "durationMonths": 12,
+    "startDate": "2023-08-01",
+    "endDate": "2024-07-01",
     "location": "Toronto",
-    "frequency": "parttime",
+    "frequency": "Full-time",
     "chartData": [
-      { "label": "Project Management", "desktop": 200},
-      { "label": "SaaS", "desktop": 150},
-      { "label": "Product", "desktop": 150},
-      { "label": "Software Design", "desktop": 175},
-      { "label": "Finance", "desktop": 50},
-      { "label": "AI/ML", "desktop": 75},
-      { "label": "Data", "desktop": 125}
+      { "label": "Project Management", "desktop": 160 },
+      { "label": "SaaS", "desktop": 170 },
+      { "label": "Product", "desktop": 170 },
+      { "label": "Software Design", "desktop": 175 },
+      { "label": "Finance", "desktop": 60 },
+      { "label": "AI/ML", "desktop": 60 },
+      { "label": "Data", "desktop": 120 }
     ]
   },
   {
     "id": 3,
-    "title": "Private Equity Analyst",
+    "title": "Private Equity Analyst (Co-op)",
     "company": "Define Capital",
     "category": "Private Equity",
     "skills": [
-      "Financial Accounting",
-      "Financial Analysis",
+      "Financial Modeling",
+      "KPI Analysis",
+      "Market Research",
       "Data Analysis",
-      "python",
-      "Market Analysis"
+      "Python"
     ],
     "tools": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Excel",
+      "Python",
+      "Google Sheets"
     ],
-    "description": "sourced high-performing VMS companies, enhanced acquisition strategy, and focused on data-driven automation/insight to drive deal success. The only engineer in a team of MBAs and finance majors",
+    "description": "Conducted market research, financial modeling, and KPI analysis to support multi-million-dollar software acquisitions. Built Python tooling to accelerate sourcing and improve data-driven deal execution.",
     "achievements": [
-      "completed financial modelling supporting a multi-million dollar acquisition ",
-      "engineered + developed a data management solution cutting lead id time by 50%",
-      "accelerated sourcing time by 5% week over week"
+      "Built Python-based tooling that reduced SaaS lead identification time by 50%+",
+      "Conducted market research, financial modeling, and KPI analysis supporting multi-million-dollar acquisitions"
     ],
     "durationMonths": 4,
     "startDate": "2023-05-01",
-    "endDate": "2023-09-01",
-    "location": "remote",
-    "frequency": "internship",
+    "endDate": "2023-08-31",
+    "location": "Remote",
+    "frequency": "Co-op",
     "chartData": [
-      { "label": "Project Management", "desktop": 150},
-      { "label": "SaaS", "desktop": 75},
-      { "label": "Product", "desktop": 100},
-      { "label": "Software Design", "desktop": 150},
-      { "label": "Finance", "desktop": 200},
-      { "label": "AI/ML", "desktop": 50},
-      { "label": "Data", "desktop": 175}
+      { "label": "Project Management", "desktop": 120 },
+      { "label": "SaaS", "desktop": 80 },
+      { "label": "Product", "desktop": 90 },
+      { "label": "Software Design", "desktop": 110 },
+      { "label": "Finance", "desktop": 200 },
+      { "label": "AI/ML", "desktop": 40 },
+      { "label": "Data", "desktop": 170 }
     ]
   },
   {
     "id": 4,
     "title": "Software Developer",
     "company": "York University",
-    "category": "Software Development",
+    "category": "Embedded Systems",
     "skills": [
       "C",
-      "RTOS",
-      "Bash",
-      "Ubuntu"
+      "FreeRTOS",
+      "Embedded Systems",
+      "Linux"
     ],
     "tools": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Ubuntu",
+      "Bash",
+      "Git"
     ],
-    "description": "optimized OBC solutions for the ESSENCE CubeSat",
+    "description": "Worked on the ESSENCE CubeSat. Developed embedded software for a CubeSat onboard computer in a high-reliability environment. Authored technical documentation for CSA-facing review supporting Test Readiness approval.",
     "achievements": [
-      "developed a function that prevented satellite spin-up",
-      "supported the operation through contributions to the TRR presentation to the CSA"
+      "Developed embedded software for a CubeSat onboard computer using C and FreeRTOS",
+      "Authored technical documentation presented to the Canadian Space Agency enabling successful Test Readiness approval"
     ],
     "durationMonths": 4,
-    "startDate": "2021",
-    "endDate": "2022",
-    "location": "In Person",
-    "frequency": "Volunteer",
+    "startDate": "2021-10-01",
+    "endDate": "2022-01-31",
+    "location": "Toronto (In-person)",
+    "frequency": "Contract",
     "chartData": [
-      { "label": "Project Management", "desktop": 50},
-      { "label": "SaaS", "desktop": 50},
-      { "label": "Product", "desktop": 75},
-      { "label": "Software Design", "desktop": 150},
-      { "label": "Finance", "desktop": 50},
-      { "label": "AI/ML", "desktop": 50},
-      { "label": "Data", "desktop": 150}
+      { "label": "Project Management", "desktop": 60 },
+      { "label": "SaaS", "desktop": 30 },
+      { "label": "Product", "desktop": 90 },
+      { "label": "Software Design", "desktop": 160 },
+      { "label": "Finance", "desktop": 30 },
+      { "label": "AI/ML", "desktop": 30 },
+      { "label": "Data", "desktop": 110 }
     ]
   },
   {
@@ -170,35 +208,64 @@
     "category": "IT",
     "skills": [
       "Windows Server",
-      "Computer Hardware",
+      "Hardware Diagnostics",
+      "Networking",
       "NAS"
     ],
     "tools": [
-      "",
-      "",
-      "",
-      "",
-      ""
+      "Windows Server",
+      "NAS (various)",
+      "Remote Desktop / Admin Tools"
     ],
-    "description": "",
+    "description": "Maintained and improved reliability across 20+ systems through diagnostics, hardware upgrades, and NAS deployments.",
     "achievements": [
-      "",
-      ""
+      "Improved reliability across 20+ systems via diagnostics and hardware upgrades",
+      "Deployed NAS solutions and maintained on-prem IT operations"
     ],
-    "durationMonths": 19,
-    "startDate": "2021",
-    "endDate": "2023",
-    "location": "In Person",
-    "frequency": "parttime",
+    "durationMonths": 20,
+    "startDate": "2021-09-01",
+    "endDate": "2023-04-30",
+    "location": "Toronto (In-person)",
+    "frequency": "Part-time",
     "chartData": [
-      { "label": "Project Management", "desktop": 125},
-      { "label": "SaaS", "desktop": 50},
-      { "label": "Product", "desktop": 50},
-      { "label": "Software Design", "desktop": 50},
-      { "label": "Finance", "desktop": 50},
-      { "label": "AI/ML", "desktop": 50},
-      { "label": "Data", "desktop": 125}
+      { "label": "Project Management", "desktop": 90 },
+      { "label": "SaaS", "desktop": 30 },
+      { "label": "Product", "desktop": 40 },
+      { "label": "Software Design", "desktop": 40 },
+      { "label": "Finance", "desktop": 30 },
+      { "label": "AI/ML", "desktop": 20 },
+      { "label": "Data", "desktop": 90 }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Professional Athlete",
+    "company": "A.S.D G.C Sora (Italy)",
+    "category": "Athletics",
+    "skills": [
+      "Performance Training",
+      "Discipline",
+      "Teamwork",
+      "Competition"
+    ],
+    "tools": [],
+    "description": "Competed as a professional athlete in Italy.",
+    "achievements": [
+      "Professional athlete in Italy (A.S.D G.C Sora)"
+    ],
+    "durationMonths": 7,
+    "startDate": "2018-11-01",
+    "endDate": "2019-05-31",
+    "location": "Italy",
+    "frequency": "Full-time",
+    "chartData": [
+      { "label": "Project Management", "desktop": 60 },
+      { "label": "SaaS", "desktop": 0 },
+      { "label": "Product", "desktop": 30 },
+      { "label": "Software Design", "desktop": 0 },
+      { "label": "Finance", "desktop": 40 },
+      { "label": "AI/ML", "desktop": 0 },
+      { "label": "Data", "desktop": 0 }
     ]
   }
-
 ]

@@ -7,12 +7,18 @@ export type ExperienceType = {
     tools: string[];
     description: string;
     achievements: string[];
+    // Added specific type for the nested projects within an experience
+    projects?: {
+        title: string;
+        tech: string[];
+        details: string[];
+    }[];
     durationMonths: number;
     startDate: string;
     endDate: string;
     location: string;
     frequency: string;
-    chartData?: { label: string; desktop: number; }[]; // Made chartData optional with ?
+    chartData?: { label: string; desktop: number; }[];
 };
 
 export type NavigationContentType = {

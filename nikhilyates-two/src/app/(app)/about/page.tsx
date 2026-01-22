@@ -9,6 +9,10 @@ const About = () => {
         element?.scrollIntoView({ behavior: 'smooth' });
     };
 
+    const handleContact = () => {
+        
+    }
+
     return (
         <div id='about' className='bg-zinc-950 p-8 h-auto min-h-screen xl:p-16 flex flex-col justify-between'>
             <h1 className='text-4xl leading-[3rem] lead scroll-m-20 md:text-6xl font-extrabold tracking-tight xl:text-7xl text-zinc-500 md:leading-[4rem]'>

@@ -30,13 +30,8 @@ const ExperienceCardSmall = ({ experience }: ExperienceCardProps ) => {
         </CardHeader>
         <CardContent className='flex-grow'>
             <div className='flex flex-col justify-between gap-4 h-full'>
-                <div className='w-full flex flex-row justify-center'>
-                    <div className='w-[100%] 2xl:w-[90%]'>
-                        <ExperienceGraph chartData={experience.chartData!} chartColor={experience.id}/>
-                    </div>
-                </div>
                 <div className='w-full'>
-                    <h3 className='mb-2 scroll-m-20 text-2xl font-medium tracking-tight'>tech</h3>
+                    <h3 className='mb-2 scroll-m-20 text-2xl font-medium tracking-tight'>skills</h3>
                     <div>
                     {experience.skills.map((skill, index) => (
                         <Badge key={index} className='mr-1 mb-1' variant={'destructive'}>{skill}</Badge>

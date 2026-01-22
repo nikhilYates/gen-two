@@ -4,7 +4,7 @@ import LandingPage from "./landing/LandingPage";
 import Experience from "@/components/sections/experience/page";
 import About from "@/app/(app)/about/page";
 import { ContactForm } from "@/app/(app)/contact/ContactForm"
-import Portfolio from "@/app/(app)/portfolio/page"
+// import Portfolio from "@/app/(app)/portfolio/page"
 import Footer from "@/app/(app)/footer/page"
 import Head from "next/head"
 import { useState, useEffect } from "react";
@@ -28,8 +28,8 @@ export default function Home() {
       <LandingPage />
       <About />
       <Experience />
-      {!isSmallScreen && <Portfolio />}
-      <ContactForm />
+      {/* {!isSmallScreen && <Portfolio />} */}
+      {/* <ContactForm /> */}
       <Footer />
     </div>
   );

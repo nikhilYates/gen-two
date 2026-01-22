@@ -1,119 +1,130 @@
-"use client"
+// "use client"
 
-import { useState } from 'react';
-import Image from 'next/image'
-import {
-    Tabs,
-    TabsContent,
-    TabsList,
-    TabsTrigger,
-} from "@/components/ui/tabs"
-import {
-    Accordion,
-    AccordionContent,
-    AccordionItem,
-    AccordionTrigger,
-  } from "@/components/ui/accordion"
-import InfoContainer from './components/leftMain/LeftMain'
-import MediaContainer from './components/rightMain/RightMain'
-import BottomContainer from './components/bottom/BottomContainer'
-import projects from '../../../../data/projects.json'
-import { ProjectType } from '@/lib/definitions'
+// import { useState } from 'react';
+// import Image from 'next/image'
+// import {
+//     Tabs,
+//     TabsContent,
+//     TabsList,
+//     TabsTrigger,
+// } from "@/components/ui/tabs"
+// import {
+//     Accordion,
+//     AccordionContent,
+//     AccordionItem,
+//     AccordionTrigger,
+//   } from "@/components/ui/accordion"
+// import InfoContainer from './components/leftMain/LeftMain'
+// import MediaContainer from './components/rightMain/RightMain'
+// import BottomContainer from './components/bottom/BottomContainer'
+// import projects from '../../../../data/projects.json'
+// import { ProjectType } from '@/lib/definitions'
   
 
-import file from '../../../../public/assets/svgs/hero/File.svg'
-import music from '../../../../public/assets/svgs/hero/Music.svg'
-import locked from '../../../../public/assets/svgs/hero/Locked.svg'
-import play from '../../../../public/assets/svgs/hero/Play.svg'
-import paper from '../../../../public/assets/svgs/hero/Paper.svg'
+// import file from '../../../../public/assets/svgs/hero/File.svg'
+// import music from '../../../../public/assets/svgs/hero/Music.svg'
+// import locked from '../../../../public/assets/svgs/hero/Locked.svg'
+// import play from '../../../../public/assets/svgs/hero/Play.svg'
+// import paper from '../../../../public/assets/svgs/hero/Paper.svg'
 
 
 
-const Portfolio = () => {
+// const Portfolio = () => {
 
-    const [selectedProject, setSelectedProject] = useState<ProjectType | null>(projects[0]);
+//     const [selectedProject, setSelectedProject] = useState<ProjectType | null>(projects[0]);
 
-    const projectsByCategory = projects.reduce((acc: { [key: string]: any[] }, project) => {
-        const category = project.category;
-        if (!acc[category]) {
-            acc[category] = [];
-        }
-        acc[category].push(project);
-        return acc;
-    }, {});
+//     const projectsByCategory = projects.reduce((acc: { [key: string]: any[] }, project) => {
+//         const category = project.category;
+//         if (!acc[category]) {
+//             acc[category] = [];
+//         }
+//         acc[category].push(project);
+//         return acc;
+//     }, {});
 
-    // Helper function to determine icon based on filename extension
-    const getIconForFile = (filename: string) => {
-        const extension = filename.split('.').pop()?.toLowerCase();
-        switch(extension) {
-            case 'ppr':
-                return paper;
-            default:
-                return play;
-        }
-    };
+//     // Helper function to determine icon based on filename extension
+//     const getIconForFile = (filename: string) => {
+//         const extension = filename.split('.').pop()?.toLowerCase();
+//         switch(extension) {
+//             case 'ppr':
+//                 return paper;
+//             default:
+//                 return play;
+//         }
+//     };
 
-    const handleFileClick = (project: ProjectType) => {
-        setSelectedProject(project);
-    }
+//     const handleFileClick = (project: ProjectType) => {
+//         setSelectedProject(project);
+//     }
 
-    return (
-        <div id='portfolio' className='bg-zinc-950 h-screen max-h-screen w-screen p-16 flex flex-col gap-8'>
-            <div className='w-full flex flex-col gap-3'>
-                <h1 className='scroll-m-20 text-6xl font-extralight tracking-tight 2xl:text-8xl text-white/20'>portfolio</h1>
-            </div>
-            <div className='flex-1 w-full border border-zinc-500 rounded-lg p-4 pl-0 flex flex-row justify-between gap-4'>
-                <div className='h-full w-[25%] 2xl:w-[15%] flex flex-col justify-start gap-4 border-r border-zinc-500'>
-                    <div>
-                        <Tabs defaultValue="files" className="w-full">
-                            <TabsList className="grid w-full pl-4 grid-cols-3 bg-zinc-950 text-white rounded-none">
-                                <TabsTrigger value="files" className="data-[state=active]:bg-zinc-800"><Image priority src={file} alt='file-icon' className='h-5 w-5'/></TabsTrigger>
-                                <TabsTrigger disabled value="music" className="data-[state=active]:bg-zinc-800"><Image priority src={music} alt='music-icon' className='h-5 w-5'/></TabsTrigger>
-                                <TabsTrigger disabled value="misc" className="data-[state=active]:bg-zinc-800"><Image priority src={locked} alt='locked-icon' className='h-5 w-5'/></TabsTrigger>
-                            </TabsList>
-                            <TabsContent value='files'>
-                                {Object.entries(projectsByCategory).map(([category, categoryProjects]) => (
-                                    <Accordion key={category} type='multiple' defaultValue={["item-1"]}>
-                                        <AccordionItem value="item-1" className='w-full'>
-                                            <AccordionTrigger className='pl-4 text-orange-400 hover:no-underline hover:bg-zinc-900'>{category}</AccordionTrigger>
-                                            {categoryProjects.map((project) => (
-                                                <AccordionContent key={project.id} className='w-full hover:underline hover:cursor-pointer' onClick={() => handleFileClick(project)}>
-                                                    <Image 
-                                                        priority 
-                                                        src={getIconForFile(project.filename)} 
-                                                        alt='file-icon' 
-                                                        className='h-4 w-4'
-                                                    />
-                                                    {project.filename}
-                                                </AccordionContent>
-                                            ))}
-                                        </AccordionItem>
-                                    </Accordion>
-                                ))}
-                            </TabsContent>
-                        </Tabs>
-                    </div>
-                </div>
-                {/* 
-                    actual data display
-                    should be converted into its own component
-                 */}
-                <div className='h-full w-full flex flex-col gap-4'>
-                    <div className='w-full flex flex-row gap-4 h-[75%] min-h-0'>
-                        <div className='w-[40%] h-full border rounded-lg border-zinc-800'>
-                            <InfoContainer project={selectedProject}/>
-                        </div>
-                        <div className='w-[60%] border rounded-lg border-zinc-800 overflow-hidden'>
-                            <MediaContainer project={selectedProject}/>  
-                        </div>
-                    </div>
-                    <div className='w-full border border-zinc-800 rounded-lg h-[25%] min-h-0'>
-                            <BottomContainer project={selectedProject} />
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
+//     return (
+//         <div id='portfolio' className='bg-zinc-950 h-screen max-h-screen w-screen p-16 flex flex-col gap-8'>
+//             <div className='w-full flex flex-col gap-3'>
+//                 <h1 className='scroll-m-20 text-6xl font-extralight tracking-tight 2xl:text-8xl text-white/20'>portfolio</h1>
+//             </div>
+//             <div className='flex-1 w-full border border-zinc-500 rounded-lg p-4 pl-0 flex flex-row justify-between gap-4'>
+//                 <div className='h-full w-[25%] 2xl:w-[15%] flex flex-col justify-start gap-4 border-r border-zinc-500'>
+//                     <div>
+//                         <Tabs defaultValue="files" className="w-full">
+//                             <TabsList className="grid w-full pl-4 grid-cols-3 bg-zinc-950 text-white rounded-none">
+//                                 <TabsTrigger value="files" className="data-[state=active]:bg-zinc-800"><Image priority src={file} alt='file-icon' className='h-5 w-5'/></TabsTrigger>
+//                                 <TabsTrigger disabled value="music" className="data-[state=active]:bg-zinc-800"><Image priority src={music} alt='music-icon' className='h-5 w-5'/></TabsTrigger>
+//                                 <TabsTrigger disabled value="misc" className="data-[state=active]:bg-zinc-800"><Image priority src={locked} alt='locked-icon' className='h-5 w-5'/></TabsTrigger>
+//                             </TabsList>
+//                             <TabsContent value='files'>
+//                                 {Object.entries(projectsByCategory).map(([category, categoryProjects]) => (
+//                                     <Accordion key={category} type='multiple' defaultValue={["item-1"]}>
+//                                         <AccordionItem value="item-1" className='w-full'>
+//                                             <AccordionTrigger className='pl-4 text-orange-400 hover:no-underline hover:bg-zinc-900'>{category}</AccordionTrigger>
+//                                             {categoryProjects.map((project) => (
+//                                                 <AccordionContent key={project.id} className='w-full hover:underline hover:cursor-pointer' onClick={() => handleFileClick(project)}>
+//                                                     <Image 
+//                                                         priority 
+//                                                         src={getIconForFile(project.filename)} 
+//                                                         alt='file-icon' 
+//                                                         className='h-4 w-4'
+//                                                     />
+//                                                     {project.filename}
+//                                                 </AccordionContent>
+//                                             ))}
+//                                         </AccordionItem>
+//                                     </Accordion>
+//                                 ))}
+//                             </TabsContent>
+//                         </Tabs>
+//                     </div>
+//                 </div>
+//                 {/* 
+//                     actual data display
+//                     should be converted into its own component
+//                  */}
+//                 <div className='h-full w-full flex flex-col gap-4'>
+//                     <div className='w-full flex flex-row gap-4 h-[75%] min-h-0'>
+//                         <div className='w-[40%] h-full border rounded-lg border-zinc-800'>
+//                             <InfoContainer project={selectedProject}/>
+//                         </div>
+//                         <div className='w-[60%] border rounded-lg border-zinc-800 overflow-hidden'>
+//                             <MediaContainer project={selectedProject}/>  
+//                         </div>
+//                     </div>
+//                     <div className='w-full border border-zinc-800 rounded-lg h-[25%] min-h-0'>
+//                             <BottomContainer project={selectedProject} />
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     )
+// }
 
-export default Portfolio;
+// export default Portfolio;
+
+// NEW INTERACTIVE PORTFOLIO IMPLEMENTATION
+// "use client"
+
+// import InteractivePortfolio from './components/InteractivePortfolio'
+
+// const Portfolio = () => {
+//     return <InteractivePortfolio />
+// }
+
+// export default Portfolio;
