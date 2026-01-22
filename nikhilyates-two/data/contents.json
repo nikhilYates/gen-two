@@ -15,20 +15,13 @@
     },
     {
         "id": 3,
-        "title": "portfolio",
-        "description": "showcase of what i can do. no, you probably can't do what i've done.",
-        "photoUrl": "assets/images/navCards/portfolio.webp",
-        "link": "portfolio"
-    },
-    {
-        "id": 4,
         "title": "contact",
         "description": "i know, i know - you're begging to hire me",
         "photoUrl": "assets/images/navCards/contact.webp",
         "link": "contact"
     },
     {
-        "id": 5,
+        "id": 4,
         "title": "scorpionlabz",
         "description": "what does it mean to build a business?",
         "photoUrl": "assets/images/navCards/sl.webp",
